@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vgSource">
+      <UniqueIdentifier>{ff783335-f648-40f4-87f1-26639e585e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\common">
+      <UniqueIdentifier>{2c0b3e27-f59c-49a6-8b8c-5cf0f00ab9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\utility">
+      <UniqueIdentifier>{352be351-367c-42ab-b0a2-3c270a28bda1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgEntry">
+      <UniqueIdentifier>{5f3936a1-5154-490d-98e0-57f2671ebc78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalConsole.cpp">
+      <Filter>vgSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalFacade.cpp">
+      <Filter>vgSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggSceneFilesHandler.cpp">
+      <Filter>vgSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggSystemFacade.cpp">
+      <Filter>vgSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggEditUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggEffectUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggGisUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggRenderEnvUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggSceneFileUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggSoundUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggVgcamUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggVgmeshUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggVgmodUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggVgshpUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vggVgterrainUtility.cpp">
+      <Filter>vgSource\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\GisMatchEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgBillboardEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgDynamicBillboardEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgEntryReg.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgGPUSpecialEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgMs3dEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgObjectEntry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgparticleentry.cpp">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobalDLL\vgGlobalDLL.cpp" />
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalConsole.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalFacade.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgglDefinition.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggSceneFilesHandler.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggSystemFacade.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgLocalDefines.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgLocalImportLibs.h">
+      <Filter>vgSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgCommonImportLibs.h">
+      <Filter>vgSource\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgCommonStdHeaders.h">
+      <Filter>vgSource\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgStdafx.h">
+      <Filter>vgSource\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggEditUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggEffectUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggGisUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggRenderEnvUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggSceneFileUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggSoundUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggVgcamUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggVgmeshUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggVgmodUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggVgshpUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vggVgterrainUtility.h">
+      <Filter>vgSource\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\GisMatchEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgBillboardEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgDynamicBillboardEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgEntryReg.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgGPUSpecialEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgMovingEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgMs3dEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgObjectEntry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobal\vgparticleentry.h">
+      <Filter>vgSource\vgEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgGlobalDLL\vgGlobalResource.h" />
+    <ClInclude Include="..\..\include\vgGlobalDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgGlobalDLL\vgGlobalDLL.rc" />
+  </ItemGroup>
+</Project>

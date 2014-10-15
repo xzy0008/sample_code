@@ -1,0 +1,430 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "vgLibraryResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifdef   VGK_USE_ENGLISH
+#undef AFX_TARG_CHS
+#define AFX_TARG_ENU
+#else
+#define AFX_TARG_CHS
+#undef AFX_TARG_ENU
+#endif
+
+#include "afxres.h"
+#include "bcgprores.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "vgLibraryResource.\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifdef   VGK_USE_ENGLISH\r\n"
+    "#undef AFX_TARG_CHS\r\n"
+    "#define AFX_TARG_ENU\r\n"
+    "#else\r\n"
+    "#define AFX_TARG_CHS\r\n"
+    "#undef AFX_TARG_ENU\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""bcgprores.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\vgFrameWork.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TERRAIN_LEVELLING DIALOGEX 0, 0, 131, 53
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置地形平整后的高度值"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,32,50,14
+    PUSHBUTTON      "取消",IDCANCEL,74,32,50,14
+    RTEXT           "高度",IDC_STATIC,7,11,32,12
+    EDITTEXT        IDC_EDIT1,46,8,65,16,ES_AUTOHSCROLL
+END
+
+IDD_VGT_CUTAREA_DLG DIALOGEX 0, 0, 330, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形切块保存"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确  定",IDOK,183,169,69,18
+    PUSHBUTTON      "取  消",IDCANCEL,256,169,69,18
+    LTEXT           "保存到路径",IDC_STATIC,19,144,41,8
+    GROUPBOX        "参数设置",IDC_STATIC,7,103,318,64
+    EDITTEXT        IDC_FILE_EDIT,67,140,251,14,ES_AUTOHSCROLL
+    LTEXT           "提示：保存的文件名目前只支持小写。当输入大写的文件名时，会自动保存为小写。",IDC_STATIC,19,121,300,13
+    CONTROL         202,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,330,96
+END
+
+IDD_SCRIPT_CONSOLE_DIALOG DIALOGEX 0, 0, 302, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Script Console"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "fghfghf　　　　　",IDC_LABEL1,0,171,87,10,NOT WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS | UDS_HORZ | NOT WS_VISIBLE,281,3,19,10
+    EDITTEXT        IDC_EDIT1,2,16,298,77,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    GROUPBOX        "Script Input",IDC_GROUP1,2,104,235,62
+    PUSHBUTTON      "取  消(&C)",IDCANCEL,242,148,58,17
+    EDITTEXT        IDC_SCRIPT_EDIT,7,116,226,45,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "执  行(&E)",IDC_SCRIPT_EXECUATE,242,127,58,17
+    CONTROL         "",IDC_SCRIPT_SPLITTER,"Static",SS_BLACKFRAME,2,94,298,3
+    EDITTEXT        IDC_SCRIPT_TIP,9,170,281,12,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MENU_LOCATION,"Static",SS_GRAYRECT | NOT WS_VISIBLE,0,0,271,16
+END
+
+IDD_DLG_VGVI_BG DIALOGEX 0, 0, 330, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置背景颜色"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,118,147,64,18
+    PUSHBUTTON      "取消",IDCANCEL,188,147,64,18
+    PUSHBUTTON      "picker",IDC_COLOR_PICKER,67,117,168,15
+    GROUPBOX        "设置背景颜色",IDC_STATIC,7,101,316,43
+    LTEXT           "当前背景色",IDC_STATIC,17,119,41,8
+    CONTROL         204,IDC_STATIC,"Static",SS_BITMAP,0,0,330,96
+    PUSHBUTTON      "重置为默认值",IDC_SET_DEFAULT,245,117,70,14
+    PUSHBUTTON      "应用",IDC_APPLY,258,147,64,18
+END
+
+IDD_VGSC_USER_CONFIG DIALOGEX 0, 0, 445, 231
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "用户脚本配置"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "脚本",IDC_BTN_EDIT_INIT,361,4,75,16,NOT WS_VISIBLE
+    GROUPBOX        "用户自定义脚本",IDC_STATIC,6,6,433,201,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TABS_LOC,"Static",SS_GRAYRECT | NOT WS_VISIBLE,14,19,414,178
+    PUSHBUTTON      "保存并执行脚本",IDC_SAVE_AND_RUN,363,211,75,16
+    PUSHBUTTON      "清空所有脚本",IDC_CLEAR_USER_SCRIPT,281,211,75,16
+    LTEXT           "提示: 脚本修改过后将全部重新执行.",IDC_STATIC,11,215,247,8
+END
+
+IDD_SOLAR_CONFIG_DLG DIALOGEX 0, 0, 290, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "阴影设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确　定",IDOK,161,109,58,19
+    PUSHBUTTON      "取　消",IDCANCEL,225,109,58,19
+    LTEXT           "纬度",IDC_STATIC,18,43,17,8
+    EDITTEXT        IDC_LATITUDE,42,40,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "DateTime",IDC_DATETIMEPICKER1,44,18,199,18
+    LTEXT           "时间",IDC_STATIC,18,22,17,8
+    GROUPBOX        "当前位置",IDC_STATIC,7,7,276,99
+    LTEXT           "提示: \n1) 对物体旋转, 缩放等功能将影响阴影的生成. \n2) 若要查看日照时间等信息, 请使用“日照分析”功能.",IDC_STATIC,16,62,264,35
+END
+
+IDD_SOLAR_ANALYSIS_DLG DIALOGEX 0, 0, 290, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "日照分析设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确　定",IDOK,159,109,58,19
+    PUSHBUTTON      "取　消",IDCANCEL,225,109,58,19
+    LTEXT           "纬度",IDC_STATIC,18,43,17,8
+    EDITTEXT        IDC_LATITUDE,42,40,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "DateTime",IDC_DATETIMEPICKER1,44,18,169,18
+    LTEXT           "时间",IDC_STATIC,18,22,17,8
+    GROUPBOX        "当前位置",IDC_STATIC,7,7,276,99
+    LTEXT           "提示: \n1) 当点击确定之后，视窗将被锁定，任何对视窗的操作将取消日照分析结果。\n2) 双击屏幕上的一点可以查看日照分析信息。",IDC_STATIC,16,62,264,35
+    PUSHBUTTON      "Button3",IDC_DURATION,127,41,50,14
+    PUSHBUTTON      "Button4",IDC_DURATION2,221,41,50,14
+    LTEXT           "开始时刻",IDC_STATIC,91,43,33,8
+    LTEXT           "结束时刻",IDC_STATIC,181,44,33,8
+END
+
+IDD_DB_TABLENEW DIALOG  0, 0, 235, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建表"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,87,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,30,50,14
+    LTEXT           "请输入新表的名字:",IDC_STATIC,10,10,69,14
+    EDITTEXT        IDC_EDIT_TABLENEW,87,10,131,14,ES_AUTOHSCROLL
+END
+
+IDD_DB_CONNECT DIALOGEX 0, 0, 197, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库连接"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,42,108,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,108,50,14
+    COMBOBOX        IDC_DB_COMBO,78,18,78,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DB_DS,78,36,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DB_USER,78,54,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DB_PWD,78,71,78,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "数据库",IDC_STATIC,42,18,24,8
+    LTEXT           "用户名",IDC_STATIC,42,54,24,8
+    LTEXT           "数据源",IDC_STATIC,42,36,24,8
+    LTEXT           "密码",IDC_STATIC,42,71,18,8
+    CONTROL         "保存配置",IDC_DB_REMPWD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,90,72,12
+    GROUPBOX        "",IDC_STATIC,12,6,174,126
+END
+
+IDD_DB_CONDITION DIALOGEX 0, 0, 371, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "条件查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DB_CDTAB3 DIALOGEX 0, 0, 368, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,297,222,50,14
+    PUSHBUTTON      "返回上页",IDC_BUTTON1,231,222,50,14
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,14,22,337,190
+    GROUPBOX        "HTML显示",IDC_STATIC,6,11,353,229
+END
+
+IDD_DB_CDTAB2 DIALOGEX 0, 0, 368, 244
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "结果集",IDC_STATIC,5,9,357,231
+    DEFPUSHBUTTON   "返回",IDC_DBTAB2_BACK,234,221,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON11,294,221,50,14
+    PUSHBUTTON      "打印",IDC_PRINT,108,221,50,14
+    PUSHBUTTON      "查询HTML",IDC_BUTTON1,172,221,50,14
+END
+
+IDD_DB_CDTAB1 DIALOGEX 0, 0, 368, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "提交查询",IDC_DC_COMMIT,290,201,47,14
+    COMBOBOX        IDC_COMBO1,51,218,62,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,51,202,63,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,149,218,52,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "条件列表",IDC_STATIC,4,6,354,180
+    GROUPBOX        "添加新条件",IDC_STATIC,4,191,354,48
+    PUSHBUTTON      "添加条件",IDC_DBC_ADDCON,290,218,47,14
+    EDITTEXT        IDC_EDIT1,207,220,55,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO4,165,202,36,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "配置名",IDC_STATIC,23,204,24,8
+    LTEXT           "逻辑关系",IDC_STATIC,125,205,32,8
+    LTEXT           "字段名",IDC_STATIC,23,223,26,8
+    LTEXT           "条件",IDC_STATIC,125,222,17,9
+END
+
+IDD_AVI_PROGRESS DIALOGEX 0, 0, 186, 41
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_AVI_PROGRESS,"msctls_progress32",WS_BORDER,7,8,172,13
+    PUSHBUTTON      "取消",IDCANCEL,61,24,59,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TERRAIN_LEVELLING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_VGT_CUTAREA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SCRIPT_CONSOLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SOLAR_ANALYSIS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DB_TABLENEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_DB_CDTAB3, DIALOG
+    BEGIN
+        TOPMARGIN, 4
+    END
+
+    IDD_AVI_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ICON_VGSC_TABS      BITMAP                  "res\\icons.bmp"
+NIDB_TABICON            BITMAP                  "res\\tabIcon.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SCRIPT_MENU MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "导入py文件",                      ID_IMPORT_PY
+        MENUITEM "导入并运行py文件(&I)",               ID_SCRIPT_RUNFILE
+        MENUITEM SEPARATOR
+        MENUITEM "保存为py文件(&S)",                 ID_SCRIPT_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "清空输出(&C)",                    ID_SCRIPT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&E)",                      ID_SCRIPT_EXIT
+        MENUITEM SEPARATOR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                      ID_SCRIPT_ABOUT
+    END
+END
+
+IDR_DBC_POP MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "删除",                          ID_DBC_POP_DELETE
+        MENUITEM "转到物体",                        ID_POPUP_TOOBJECT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DB_CDTAB3 DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x344c, 0x0000, 0x1ff0, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\vgFrameWork.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

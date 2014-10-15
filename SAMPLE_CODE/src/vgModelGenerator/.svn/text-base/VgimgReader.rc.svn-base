@@ -1,0 +1,619 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\VgimgReader.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VgimgReader.ico"
+IDR_VgimgReaderTYPE     ICON                    "res\\VgimgReaderDoc.ico"
+IDI_ICON2               ICON                    "res\\Software Blue 1.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\Software Blue 2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_LARGEICONS          BITMAP                  "res\\bitmap1.bmp"
+IDB_SMALLICONS          BITMAP                  "res\\bitmap2.bmp"
+IDB_STATEICONS          BITMAP                  "res\\bmp00001.bmp"
+IDB_FILE                BITMAP                  "res\\IDB_FILE.BMP"
+IDB_STATE               BITMAP                  "res\\state_images.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bmp00002.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap30x30.bmp"
+IDR_MAINFRAME_24        BITMAP                  "res\\tb24.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    SEPARATOR
+    BUTTON      ID_Aff
+    BUTTON      ID_CREATff
+    BUTTON      ID_CREATE_VGIMG
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "拆分(&P)",                      ID_WINDOW_SPLIT
+    END
+    POPUP "右视图操作"
+    BEGIN
+        MENUITEM "刷新",                          ID_RIGHTVIEW_REFRESH
+    END
+    POPUP "创建操作"
+    BEGIN
+        MENUITEM "创建vgimg包",                    ID_CREATE_VGIMG
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 VgimgReader(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "vvv"
+    BEGIN
+        POPUP "dfg"
+        BEGIN
+            POPUP "dfdfdf"
+            BEGIN
+                MENUITEM "dfdf",                        ID_DFDFDF_DFDF
+            END
+            MENUITEM "dfdf",                        ID_DFG_DFDF
+        END
+        MENUITEM "dfb",                         ID_VVV_DFB
+    END
+    POPUP "vvvv"
+    BEGIN
+        MENUITEM "fdf",                         ID_VVVV_FDF
+    END
+END
+
+IDR_RIGHTVIEW_BACK_MENU MENU 
+BEGIN
+    POPUP "右视图右键菜单"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "大图标",                         ID_VIEW_LARGEICON
+        MENUITEM "小图标",                         ID_VIEW_SMALLICON
+        MENUITEM "列表",                          ID_VIEW_LIST
+        MENUITEM "详细信息",                        ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        MENUITEM "刷新",                          ID_RIGHTVIEW_REFRESH
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 257, 263
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VgimgReader"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,21,24,21,21
+    LTEXT           "VgimgReader 1.0 版 programmed by Leven",IDC_STATIC,59,21,180,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 VR-GIS",IDC_STATIC,59,49,119,8
+    DEFPUSHBUTTON   "确定",IDOK,194,235,50,16,WS_GROUP
+    GROUPBOX        "About",IDC_STATIC,7,7,243,249
+    LTEXT           "ourleven@yahoo.com.cn",IDC_STATIC,59,35,166,8
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,62,229,167
+END
+
+IDD_FILETREEDLG DIALOGEX 0, 0, 329, 283
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,272,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,272,26,50,16
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,231,197,WS_EX_STATICEDGE
+END
+
+IDD_SAVEVGIMGDLG DIALOGEX 0, 0, 348, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "vgm生成器(By: Leven. E-mail:ourleven@yahoo.com.cn)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,187,330,99,16
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,338,149,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "插入mod",IDC_IMPORT_FILES,14,186,47,14
+    LTEXT           "mod文件列表。提示：按住Ctrl和Shift可以连续选择",IDC_STATIC,12,14,321,13
+    PUSHBUTTON      "...",IDC_SAVEVGIMG_AIMFILE_OPEN,316,262,17,16
+    EDITTEXT        IDC_SAVEVGIMG_AIMFILE_PATH,75,263,236,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "目标文件地址",IDC_STATIC,17,266,54,11
+    PUSHBUTTON      "删除全部",IDC_BUTTON2,122,186,47,14
+    GROUPBOX        "文件选项",IDC_STATIC,4,2,341,287,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "删除选择",IDC_SAVEVGIMG_DELETESELECTED,68,186,47,14
+    PUSHBUTTON      "反选",IDC_SAVEVGIMG_INVERTSELECTED,230,186,47,14
+    PUSHBUTTON      "全选",IDC_SAVEVGIMG_SELECTEDALL,176,186,47,14
+    PUSHBUTTON      "取消选择",IDC_SAVEVGIMG_CANCELSELECTED,284,186,47,14
+    PUSHBUTTON      "全部生成vgm",IDC_DDS_SAVe,68,330,102,16
+    CONTROL         "",IDC_SMALL_OPENGL,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,281,208,50,48
+    EDITTEXT        IDC_EDIT1,111,210,62,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,111,234,62,18,ES_AUTOHSCROLL
+    RTEXT           "最模糊一级LOD的参数",IDC_STATIC,21,215,81,8
+    RTEXT           "中间一级LOD的参数",IDC_STATIC,23,237,80,8
+    EDITTEXT        IDC_EDIT3,227,211,40,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,225,236,40,14,ES_AUTOHSCROLL
+    LTEXT           "Near",IDC_STATIC,187,212,28,15
+    LTEXT           "Far",IDC_STATIC,186,234,25,16
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,7,313,338,10
+    LTEXT           "Static",IDC_PROGRESS_MSG,7,299,338,8
+END
+
+IDD_SAVEVGIMG_IMPORTFILEDLG DIALOGEX 0, 0, 287, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入文件"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,175,263,50,16
+    PUSHBUTTON      "取消",IDCANCEL,230,263,50,16
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,7,7,273,250
+    PUSHBUTTON      "查看选中的文件列表",IDC_BUTTON1,7,265,84,14
+    CONTROL         "允许同名",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,267,65,10
+END
+
+IDD_SAVEVGIMG_CONFIGSELECTEDDLG DIALOGEX 0, 0, 378, 273
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件保存设置"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,9,252,45,14
+    PUSHBUTTON      "取消",IDCANCEL,64,252,45,14
+    GROUPBOX        "格式设置",IDC_STATIC,7,7,145,68
+    COMBOBOX        IDC_COMBO_AIMFILE_FORMAT,77,18,67,100,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "目标文件格式",IDC_STATIC,16,21,55,8
+    GROUPBOX        "pos",IDC_SAVEVGIMG_CONFIG_POS,167,0,210,266,NOT WS_VISIBLE
+    GROUPBOX        "Static",IDC_SAVEVGIMG_SEL_CLIP,167,1,8,262,NOT WS_VISIBLE
+    PUSHBUTTON      "高级格式设置>>",IDC_SAVEVGIMG_SELCON_CLIPSEL,77,79,73,14
+    PUSHBUTTON      "帮助",IDC_BUTTON2,117,252,45,14
+END
+
+IDD_SAVEVGIMG_CONFIG_DDS DIALOGEX 0, 0, 217, 260
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "DDS配置选项",IDC_STATIC,0,7,210,246
+    COMBOBOX        IDC_COMBO1,51,21,74,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "压缩算法",IDC_STATIC,2,23,41,10,0,WS_EX_RIGHT
+    LTEXT           "质量高",IDC_STATIC,12,97,25,8
+    LTEXT           "速度快",IDC_STATIC,171,97,25,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,95,120,13
+    EDITTEXT        IDC_EDIT1,11,39,189,50,ES_MULTILINE | ES_AUTOHSCROLL | ES_NOHIDESEL | NOT WS_BORDER
+END
+
+IDD_SAVEVGIMG_CONFIG_JPG DIALOGEX 0, 0, 195, 223
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "JPG设置选项",IDC_STATIC,7,7,181,209
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VgimgReader.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "VgimgReader.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_FILETREEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_SAVEVGIMGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+
+    IDD_SAVEVGIMG_IMPORTFILEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SAVEVGIMG_CONFIGSELECTEDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_SAVEVGIMG_CONFIG_DDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_SAVEVGIMG_CONFIG_JPG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SAVEVGIMG_CONFIGSELECTEDDLG DLGINIT
+BEGIN
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 9, 0
+0x4444, 0x5f53, 0x5844, 0x3154, "\000" 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 9, 0
+0x4444, 0x5f53, 0x5844, 0x3354, "\000" 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 9, 0
+0x4444, 0x5f53, 0x5844, 0x3554, "\000" 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 4, 0
+0x706a, 0x0067, 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 4, 0
+0x6d62, 0x0070, 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 4, 0
+0x6774, 0x0061, 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 4, 0
+0x6974, 0x0066, 
+    IDC_COMBO_AIMFILE_FORMAT, 0x403, 4, 0
+0x6e70, 0x0067, 
+    0
+END
+
+IDD_SAVEVGIMG_CONFIG_DDS DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 17, 0
+0x6f43, 0x6f6c, 0x7275, 0x6c43, 0x7375, 0x6574, 0x4672, 0x7469, "\000" 
+    IDC_COMBO1, 0x403, 23, 0
+0x6f43, 0x6f6c, 0x7275, 0x654d, 0x7274, 0x6369, 0x6550, 0x6372, 0x7065, 
+0x7574, 0x6c61, "\000" 
+    IDC_COMBO1, 0x403, 21, 0
+0x436b, 0x6c6f, 0x756f, 0x4d72, 0x7465, 0x6972, 0x5563, 0x696e, 0x6f66, 
+0x6d72, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "VgimgReader\n\nVgimgReader\n\n\nVgimgReader.Document\nVgimgReader.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "VgimgReader"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+    ID_VIEW_AUTOARRANGE     "以网格方式排列图标。"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "使用小图标显示各项。\n小图标"
+    ID_VIEW_LARGEICON       "使用大图标显示各项。\n大图标"
+    ID_VIEW_LIST            "以列表方式显示各项。\n列表"
+    ID_VIEW_DETAILS         "显示窗口中每一项的相关详细信息。\n详细信息"
+    ID_VIEW_LINEUP          "以网格方式排列图标。"
+    ID_VIEW_BYNAME          "按字母顺序对图标排序。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\VgimgReader.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

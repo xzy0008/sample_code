@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vgSource">
+      <UniqueIdentifier>{6f35dc86-03dd-4e4d-9312-512cc7c91f3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgConf">
+      <UniqueIdentifier>{33a64977-6b21-4f04-a0c8-bc3fdec904a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgKernel">
+      <UniqueIdentifier>{b67c8d38-eab3-4d59-96fa-2a4a20eeb2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgThreads">
+      <UniqueIdentifier>{995930e2-cf9d-4c19-9bc9-65de2e2125d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgUserInterface">
+      <UniqueIdentifier>{225a20de-a138-4fc4-abf5-29dd32ccfaf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgConfig">
+      <UniqueIdentifier>{28d73a2e-d721-444e-b9d7-a2534d66bed5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgConf\CLinkedList.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoConfigInterface.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoConfigUtility.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoExeConfig.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoExeConfigRegProxy.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoProjectConfig.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\vgcoProjectConfigRegProxy.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\wtlstring.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\XmlParser.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConf\XMLProfile.h">
+      <Filter>vgSource\vgConf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\Crc32Static.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractEntry.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTree.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTreeFac.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTreeFacMgr.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkAxis.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkBox.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkBox3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCamMgrHolder.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCamMgrImpl.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkClassFactory.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkClassFactoryManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkClassIdentify.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkColorableObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkColorVal.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCommandManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkConvertUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCoordSystem.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCrcUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkCurrentProgram.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkDirectInputDefinition.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkDissolveObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkDynamicLibraryUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkEditableInterface.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkEternityInterface.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkException.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkExportManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkFlickerObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkForward.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkGpuManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkGpuSupport.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkImagePos.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkImageRect.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkInputCodeDef.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkInputSystem.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersector.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersectSegment3Box3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersectSegment3Triangle3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkLog.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkLogManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkMat4.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkMath.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkOcclusionInterface.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkOpenGLSupport.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkOperation.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPlane.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPlugin.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginLoader.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginLoaderOnString.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginRenderCmd.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPointInPolygon.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPolygon2D.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkProcessObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkProperty.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPropertyManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkPropertyObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkQuat.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRay.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommand.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommandManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommandPriority.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderer.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererData.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererDataInterface.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererHolder.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererHolderManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderMngCommand.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkRgbaQuad.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSegment3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectionInterface.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializableFactory.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializableObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializer.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializerManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkShadowCastObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSharePtr.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSingleton.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSingletonLifeTimeDefine.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStandardOutput.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStreamReader.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStreamWriter.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStringPairVector.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStringUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkStringVector.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkSystemUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTimelineManager.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTimelineObserver.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTimer.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTrace.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTransparentObject.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkTriangle3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkUniqueID.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkVec2.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkVec3.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkWarning.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\vgkWriteUtility.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgKernel\Win32InputBox.h">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\AutoEvent.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\CriticalSection.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\Event.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\ManualEvent.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\Mutex.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\ScopedLock.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\Semaphore.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\ThreadPool.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgThreads\ThreadRequest.h">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntry.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntryFactory.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntryGroup.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractGuiFactory.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefaultEntry.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefaultEntryGroup.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefinition.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusEntryManager.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusGuiManager.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusMenuPanel.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusOutputPanel.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusPropertiesPanel.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusPropertyItem.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusStatusPanel.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgUserInterface\vgusTreePanel.h">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgConfig\vgcXMLConfigManager.h">
+      <Filter>vgSource\vgConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgLibraryDLL\vgLibraryResource.h" />
+    <ClInclude Include="..\..\include\vgLibraryDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgConf\vgcoConfigInterface.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\vgcoExeConfig.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\vgcoExeConfigRegProxy.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\vgcoProjectConfig.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\vgcoProjectConfigRegProxy.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\XmlParser.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConf\XMLProfile.cpp">
+      <Filter>vgSource\vgConf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\Crc32Static.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkAbstractTreeFac.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkAbstractTreeFacMgr.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkAxis.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkBox.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkBox3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCamMgrHolder.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCamMgrImpl.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkClassFactory.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkClassFactoryManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkColorVal.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCommandManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCoordSystem.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCrcUtility.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkCurrentProgram.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkDissolveObject.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkDynamicLibraryUtility.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkException.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkExportManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkFlickerObject.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkGpuManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkGpuSupport.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkImagePos.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkImageRect.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkInputSystem.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersector.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersectSegment3Box3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersectSegment3Triangle3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkLog.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkLogManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkMat4.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkMath.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkOpenGLSupport.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkOperation.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkPlane.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkPluginLoaderOnString.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkPluginManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkPointInPolygon.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkPropertyManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkQuat.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkRenderCommandManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererHolder.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererHolderManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkSegment3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkSelectManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkSerializerManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkSingleton.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkStandardOutput.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkStreamReader.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkStreamWriter.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkStringUtility.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkSystemUtility.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkTimelineManager.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkTriangle3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkUniqueID.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkVec2.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkVec3.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkWarning.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkWriteUtility.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\Win32InputBox.cpp">
+      <Filter>vgSource\vgKernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgThreads\ThreadPool.cpp">
+      <Filter>vgSource\vgThreads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgUserInterface\vgusDefaultEntry.cpp">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgUserInterface\vgusEntryManager.cpp">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgUserInterface\vgusGuiManager.cpp">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgUserInterface\vgusTreePanel.cpp">
+      <Filter>vgSource\vgUserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgConfig\vgcXMLConfigManager.cpp">
+      <Filter>vgSource\vgConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgLibraryDLL\vgLibraryDLL.cpp" />
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\vgKernel\vgkImagePos.inl">
+      <Filter>vgSource\vgKernel</Filter>
+    </None>
+    <None Include="..\..\include\vgKernel\vgkQuat.inl">
+      <Filter>vgSource\vgKernel</Filter>
+    </None>
+    <None Include="..\..\include\vgKernel\vgkVec2.inl">
+      <Filter>vgSource\vgKernel</Filter>
+    </None>
+    <None Include="..\..\include\vgKernel\vgkVec3.inl">
+      <Filter>vgSource\vgKernel</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgLibraryDLL\vgLibraryDLL.rc" />
+  </ItemGroup>
+</Project>

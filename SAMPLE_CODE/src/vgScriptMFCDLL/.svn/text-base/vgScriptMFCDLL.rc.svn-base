@@ -1,0 +1,205 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifdef   VGK_USE_ENGLISH
+#undef AFX_TARG_CHS
+#define AFX_TARG_ENU
+#else
+#define AFX_TARG_CHS
+#undef AFX_TARG_ENU
+#endif
+
+#include "afxres.h"
+#include "bcgprores.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifdef   VGK_USE_ENGLISH\r\n"
+    "#undef AFX_TARG_CHS\r\n"
+    "#define AFX_TARG_ENU\r\n"
+    "#else\r\n"
+    "#define AFX_TARG_CHS\r\n"
+    "#undef AFX_TARG_ENU\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""bcgprores.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\vgFrameWork.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCRIPT_CONSOLE_DIALOG DIALOGEX 0, 0, 302, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Script Console"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "fghfghf　　　　　",IDC_LABEL1,0,171,87,10,NOT WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS | UDS_HORZ | NOT WS_VISIBLE,281,3,19,10
+    EDITTEXT        IDC_EDIT1,2,16,298,77,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    GROUPBOX        "Script Input",IDC_GROUP1,2,104,235,62
+    PUSHBUTTON      "取  消(&C)",IDCANCEL,242,148,58,17
+    EDITTEXT        IDC_SCRIPT_EDIT,7,116,226,45,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "执  行(&E)",IDC_SCRIPT_EXECUATE,242,127,58,17
+    CONTROL         "",IDC_SCRIPT_SPLITTER,"Static",SS_BLACKFRAME,2,94,298,3
+    EDITTEXT        IDC_SCRIPT_TIP,9,170,281,12,ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MENU_LOCATION,"Static",SS_GRAYRECT | NOT WS_VISIBLE,0,0,271,16
+END
+
+IDD_VGSC_USER_CONFIG DIALOGEX 0, 0, 445, 231
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "用户脚本配置"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "脚本",IDC_BTN_EDIT_INIT,361,4,75,16,NOT WS_VISIBLE
+    GROUPBOX        "用户自定义脚本",IDC_STATIC,6,6,433,201,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TABS_LOC,"Static",SS_GRAYRECT | NOT WS_VISIBLE,14,19,414,178
+    PUSHBUTTON      "保存并执行脚本",IDC_SAVE_AND_RUN,363,211,75,16
+    PUSHBUTTON      "清空所有脚本",IDC_CLEAR_USER_SCRIPT,281,211,75,16
+    LTEXT           "提示: 脚本修改过后将全部重新执行.",IDC_STATIC,11,215,247,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SCRIPT_CONSOLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ICON_VGSC_TABS      BITMAP                  "res\\icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SCRIPT_MENU MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "导入py文件",                      ID_IMPORT_PY
+        MENUITEM "导入并运行py文件(&I)",               ID_SCRIPT_RUNFILE
+        MENUITEM SEPARATOR
+        MENUITEM "保存为py文件(&S)",                 ID_SCRIPT_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "清空输出(&C)",                    ID_SCRIPT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&E)",                      ID_SCRIPT_EXIT
+        MENUITEM SEPARATOR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                      ID_SCRIPT_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VRGIS.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\vgFrameWork.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

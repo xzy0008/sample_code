@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F80A1DF-D245-4122-A876-477AB729F4BE}</ProjectGuid>
+    <RootNamespace>vgGlobalDLL</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;$(SolutionDir)include\vgGlobal;$(SolutionDir)include\vgDeprecated;$(SolutionDir)include\vgDeprecatedMFCDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;VGK_DLL;VGDEP_DLL;VGSC_DLL;VGGL_DLL;VGGL_NONCLIENT_BUILD_DLL;VGPL_DLL;VGSH_DLL;VGOC_DLL;VGSO_DLL;VGSOU_DLL;VGD_DLL;VGTR_DLL;VGL_DLL;VGT_DLL;VGMO_DLL;VGM_DLL;VGI_DLL;VGA_DLL;VGCA_DLL;VGF_DLL;VGVI_DLL;VGG_DLL;VGUI_DLL;VGTRI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)..\lib\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;$(SolutionDir)include\vgGlobal;$(SolutionDir)include\vgDeprecated;$(SolutionDir)include\vgDeprecatedMFCDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;VGK_DLL;VGDEP_DLL;VGSC_DLL;VGGL_DLL;VGGL_NONCLIENT_BUILD_DLL;VGPL_DLL;VGSH_DLL;VGOC_DLL;VGSO_DLL;VGSOU_DLL;VGD_DLL;VGTR_DLL;VGL_DLL;VGT_DLL;VGMO_DLL;VGM_DLL;VGI_DLL;VGA_DLL;VGCA_DLL;VGF_DLL;VGVI_DLL;VGUI_DLL;VGTRI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalConsole.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalFacade.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggSceneFilesHandler.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggSystemFacade.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggEditUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggEffectUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggGisUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggGlobalUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggRenderEnvUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggSceneFileUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggSoundUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggVgcamUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggVgmeshUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggVgmodUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggVgshpUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vggVgterrainUtility.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\GisMatchEntry.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vgBillboardEntry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgDynamicBillboardEntry.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vgEntryReg.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vgGPUSpecialEntry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgMs3dEntry.cpp" />
+    <ClCompile Include="..\..\src\vgGlobal\vgObjectEntry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobal\vgparticleentry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgGlobalDLL\vgGlobalDLL.cpp" />
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalConsole.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalFacade.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgglDefinition.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggSceneFilesHandler.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggSystemFacade.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgLocalDefines.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgLocalImportLibs.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgCommonImportLibs.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgCommonStdHeaders.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgStdafx.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggEditUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggEffectUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggGisUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggGlobalUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggRenderEnvUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggSceneFileUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggSoundUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggVgcamUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggVgmeshUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggVgmodUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggVgshpUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vggVgterrainUtility.h" />
+    <ClInclude Include="..\..\include\vgGlobal\GisMatchEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgBillboardEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgDynamicBillboardEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgEntryReg.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgGPUSpecialEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgMovingEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgMs3dEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgObjectEntry.h" />
+    <ClInclude Include="..\..\include\vgGlobal\vgparticleentry.h" />
+    <ClInclude Include="..\..\include\vgGlobalDLL\vgGlobalResource.h" />
+    <ClInclude Include="..\..\include\vgGlobalDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgGlobalDLL\vgGlobalDLL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vgLibraryDLL\vgLibraryDLL.vcxproj">
+      <Project>{be0f330d-1d65-4eaa-9808-3295593536f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

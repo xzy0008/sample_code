@@ -1,0 +1,178 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "vgTriggerResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifdef   VGK_USE_ENGLISH
+#undef AFX_TARG_CHS
+#define AFX_TARG_ENU
+#else
+#define AFX_TARG_CHS
+#undef AFX_TARG_ENU
+#endif
+
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "vgDatabaseResource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifdef   VGK_USE_ENGLISH\r\n"
+    "#undef AFX_TARG_CHS\r\n"
+    "#define AFX_TARG_ENU\r\n"
+    "#else\r\n"
+    "#define AFX_TARG_CHS\r\n"
+    "#undef AFX_TARG_ENU\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+NIDR_MAINFRAME MENU 
+BEGIN
+    POPUP "事件系统"
+    BEGIN
+        MENUITEM "转换所选物体为触发器",                       ID_TRIGGER_CONVERT
+        MENUITEM "开启\\关闭所有触发器",                       ID_TRIGGER_ENABLE
+        MENUITEM "触发器事件编辑",                        ID_TRIGGER_EDIT_EVENT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_TRIGGER_SETTING DIALOGEX 0, 0, 285, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "事件管理配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "基本",IDC_STATIC,7,7,271,42
+    LTEXT           "所选触发器：",IDC_STATIC,19,19,49,8
+    EDITTEXT        IDC_TRIGGERNAME,216,149,62,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "触发配置：",IDC_STATIC,137,18,41,8
+    COMBOBOX        IDC_CONFIG_COMBO,180,16,89,65,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "触发配置名：",IDC_STATIC,19,34,49,8
+    EDITTEXT        IDC_EDIT_ATTACH_NAME,68,32,62,12,ES_AUTOHSCROLL
+    LTEXT           "触发类型：",IDC_STATIC,137,34,41,8
+    COMBOBOX        IDC_COMBO_ATTACH_TYPE,180,32,44,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加/修改",IDC_UPDATE,228,32,41,13
+    LTEXT           "静态",IDC_TAB_LOC,7,53,271,92,NOT WS_VISIBLE
+    LTEXT           "事件配置一般是一个字符串，根据触发器的种类不同，字符串的解析含义也不相同，详见使用手册",IDC_STATIC,24,148,247,19
+    COMBOBOX        IDC_COMBO_TIGGERNAME,68,16,62,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+
+////add by kingj 2009/12/9    10:41
+    IDD_DLG_TRIGGER_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+	
+   
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_TRIGGER_SETTING DLGINIT
+BEGIN
+    IDC_COMBO_ATTACH_TYPE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 7, 0
+0x6944, 0x6c61, 0x676f, "\000" 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 7, 0
+0x6554, 0x7478, 0x4432, "\000" 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 8, 0
+0x6f53, 0x6e75, 0x3364, 0x0044, 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 9, 0
+0x654b, 0x4679, 0x6d72, 0x6561, "\000" 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 4, 0
+0x7641, 0x0069, 
+    IDC_COMBO_ATTACH_TYPE, 0x403, 7, 0
+0x6353, 0x6972, 0x7470, "\000" 
+    0
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

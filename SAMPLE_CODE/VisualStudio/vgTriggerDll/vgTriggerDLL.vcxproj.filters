@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vgSource">
+      <UniqueIdentifier>{356f965a-b525-461c-bba0-b6485d84685d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgTrigger">
+      <UniqueIdentifier>{21c948e7-9f4f-4dd4-9e94-c2f7255ad1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\vgTriggerPlugin">
+      <UniqueIdentifier>{7f01e25a-ab81-45f8-999e-8de95463088f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgSource\entry">
+      <UniqueIdentifier>{295712bb-bf31-48a1-8c89-b3db8419306f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandAbstract.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandAvi.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandFactory.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandKeyframe.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandMsg.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandScript.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandSound.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandText2D.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandType.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrDefinition.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrDialogTriggerSetting.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTrigger.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerManager.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerRenderCommand.h">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTriggerDLL\CommandWnd.h">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtr_api.h">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerPlugin.h">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgTrigger\vgTriggerEntry.h">
+      <Filter>vgSource\entry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\vgTriggerDLL\vgDatabaseResource.h" />
+    <ClInclude Include="..\..\include\vgTriggerDLL\vgStableHeaders.h" />
+    <ClInclude Include="..\..\include\vgTriggerDLL\vgTriggerResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandAvi.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandFactory.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandKeyframe.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandMsg.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandScript.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandSound.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandText2D.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrDialogTriggerSetting.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTrigger.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerManager.cpp">
+      <Filter>vgSource\vgTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTriggerDLL\CommandWnd.cpp">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTriggerDLL\menu_in_dll.cpp">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtr_api.cpp">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerManagerDll.cpp">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerPlugin.cpp">
+      <Filter>vgSource\vgTriggerPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTrigger\vgTriggerEntry.cpp">
+      <Filter>vgSource\entry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp" />
+    <ClCompile Include="..\..\src\vgTriggerDLL\vgTriggerDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgTriggerDLL\vgTriggerDLL.rc" />
+  </ItemGroup>
+</Project>

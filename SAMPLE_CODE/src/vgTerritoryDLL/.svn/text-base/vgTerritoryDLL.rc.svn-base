@@ -1,0 +1,207 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "vgTerritoryResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifdef   VGK_USE_ENGLISH
+#undef AFX_TARG_CHS
+#define AFX_TARG_ENU
+#else
+#define AFX_TARG_CHS
+#undef AFX_TARG_ENU
+#endif
+
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "vgTerritoryResource.\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifdef   VGK_USE_ENGLISH\r\n"
+    "#undef AFX_TARG_CHS\r\n"
+    "#define AFX_TARG_ENU\r\n"
+    "#else\r\n"
+    "#define AFX_TARG_CHS\r\n"
+    "#undef AFX_TARG_ENU\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VGT_CUTAREA_DLG DIALOGEX 0, 0, 330, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形切块保存"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确  定",IDOK,183,169,69,18
+    PUSHBUTTON      "取  消",IDCANCEL,256,169,69,18
+    LTEXT           "保存到路径",IDC_STATIC,19,144,41,8
+    GROUPBOX        "参数设置",IDC_STATIC,7,103,318,64
+    EDITTEXT        IDC_FILE_EDIT,67,140,251,14,ES_AUTOHSCROLL
+    LTEXT           "提示：保存的文件名目前只支持小写。当输入大写的文件名时，会自动保存为小写。",IDC_STATIC,19,121,300,13
+    CONTROL         230,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,330,96
+END
+
+IDD_DLG_CUTSURFACE DIALOGEX 0, 0, 318, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "剖面分析"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,243,123,50,21
+    CONTROL         "",IDC_CUTVIEW_RECT,"Static",SS_BLACKFRAME,4,0,309,116
+    LTEXT           "静态",IDC_STA_OUT_TXT,33,122,163,23
+END
+
+IDD_DLG_SET_CELLSIZE DIALOGEX 0, 0, 146, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置差值点间隔"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,48,55,50,18
+    LTEXT           "请设置差值点间隔:",IDC_STC_CELLSIZE,11,14,73,11
+    LTEXT           "提示:间隔越小,计算精度越高,但计算时间越长",IDC_STC_CELLSIZE2,13,30,120,17
+    EDITTEXT        IDC_EDIT_cellsize,83,10,48,16,ES_AUTOHSCROLL
+END
+
+IDD_PROCESSING DIALOGEX 0, 0, 226, 39
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS_INDICATOR,"msctls_progress32",0x1,7,21,212,11
+    LTEXT           "Processing...",IDC_INFO,7,7,149,11
+END
+
+IDD_DLG_VISIBLE_ANA DIALOGEX 0, 0, 181, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通视分析"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,110,177,50,14
+    PUSHBUTTON      "定位至模型",IDCANCEL,21,177,50,14
+    GROUPBOX        "结果",IDC_STC_GROUP_VISI_ANA1,3,1,174,50
+    GROUPBOX        "列表",IDC_STC_GROUP_VISI_ANA2,3,52,174,119
+    LTEXT           " 静态",IDC_STC_VISIANA_GRID_POS,8,61,166,104
+    LTEXT           "静态",IDC_STC_VISIANA_RES,5,9,170,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VGT_CUTAREA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_DLG_CUTSURFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 313
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DLG_SET_CELLSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_PROCESSING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    IDD_DLG_VISIBLE_ANA, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 177
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "vgt_cut_area.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

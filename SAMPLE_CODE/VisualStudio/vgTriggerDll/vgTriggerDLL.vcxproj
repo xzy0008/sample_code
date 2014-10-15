@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F08A07A6-6F8D-4ECE-A760-9A1352A83C8A}</ProjectGuid>
+    <RootNamespace>vgLogoDLL</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\PlugIn\Menu Main\Default\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\PlugIn\Menu Main\Default\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;$(SolutionDir)include\vgDeprecatedMFCDLL;$(SolutionDir)include\vgDeprecated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;VGK_DLL;VGI_DLL;VGL_DLL;VGSOU_DLL;VGDEP_DLL;VGSC_DLL;VGF_DLL;VGCA_DLL;VGUI_DLL;VGTRI_DLL;VGTRI_NONCLIENT_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)..\lib\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\vgDeprecated;$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;VGK_DLL;VGI_DLL;VGL_DLL;VGSOU_DLL;VGDEP_DLL;VGSC_DLL;VGF_DLL;VGCA_DLL;VGUI_DLL;VGTRI_DLL;VGTRI_NONCLIENT_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>H:\vrgis\trunkDLL\include\vgDeprecated;$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandAbstract.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandAvi.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandFactory.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandKeyframe.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandMsg.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandScript.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandSound.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandText2D.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrCommandType.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrDefinition.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrDialogTriggerSetting.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTrigger.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerManager.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerRenderCommand.h" />
+    <ClInclude Include="..\..\include\vgTriggerDLL\CommandWnd.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtr_api.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgtrTriggerPlugin.h" />
+    <ClInclude Include="..\..\include\vgTrigger\vgTriggerEntry.h" />
+    <ClInclude Include="..\..\src\vgTriggerDLL\vgDatabaseResource.h" />
+    <ClInclude Include="..\..\include\vgTriggerDLL\vgStableHeaders.h" />
+    <ClInclude Include="..\..\include\vgTriggerDLL\vgTriggerResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandAvi.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandFactory.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandKeyframe.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandMsg.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandScript.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandSound.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrCommandText2D.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrDialogTriggerSetting.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTrigger.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerManager.cpp" />
+    <ClCompile Include="..\..\src\vgTriggerDLL\CommandWnd.cpp" />
+    <ClCompile Include="..\..\src\vgTriggerDLL\menu_in_dll.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtr_api.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerManagerDll.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgtrTriggerPlugin.cpp" />
+    <ClCompile Include="..\..\src\vgTrigger\vgTriggerEntry.cpp" />
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgTriggerDLL\vgTriggerDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgTriggerDLL\vgTriggerDLL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vgLibraryDLL\vgLibraryDLL.vcxproj">
+      <Project>{be0f330d-1d65-4eaa-9808-3295593536f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1358 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "res.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifdef   VGK_USE_ENGLISH
+#undef AFX_TARG_CHS
+#define AFX_TARG_ENU
+#else
+#define AFX_TARG_CHS
+#undef AFX_TARG_ENU
+#endif
+
+#include "afxres.h"
+#include "bcgprores.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "res.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifdef   VGK_USE_ENGLISH\r\n"
+    "#undef AFX_TARG_CHS\r\n"
+    "#define AFX_TARG_ENU\r\n"
+    "#else\r\n"
+    "#define AFX_TARG_CHS\r\n"
+    "#undef AFX_TARG_ENU\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""bcgprores.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\vgFrameWork.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+NIDR_MAINFRAME          ICON                    "res\\vgFrameWork.ico"
+NIDR_vgFrameWorkTYPE    ICON                    "res\\vgFrameWorkDoc.ico"
+NIDI_ICON1              ICON                    "res\\root.ico"
+NIDI_ICON2              ICON                    "res\\Navi_wreckBlack.ico"
+NIDI_ICON3              ICON                    "res\\Navi_wreckBlue.ico"
+IDI_DEFAULT             ICON                    "res\\ico00001.ico"
+IDR_MAINFRAME           ICON                    "res\\VRGIS.ico"
+IDR_FRAMEWTYPE          ICON                    "res\\FrameWorkDoc.ico"
+IDI_CAM1                ICON                    "res\\s_i.ico"
+IDI_CAM0                ICON                    "res\\u_i.ico"
+IDI_OBJ0                ICON                    "res\\unchecked.ico"
+IDI_SUN                 ICON                    "res\\check.ico"
+IDI_OBJ1                ICON                    "res\\checked.ico"
+IDI_ROOT                ICON                    "res\\root.ico"
+IDI_TREE0               ICON                    "res\\bar_up.ico"
+IDI_TREE1               ICON                    "res\\bar_down.ico"
+IDI_ANI0                ICON                    "res\\Navi_wreckBlack.ico"
+IDI_ANI1                ICON                    "res\\Navi_wreckBlue.ico"
+IDI_WATER1              ICON                    "res\\icon1.ico"
+IDI_WATER2              ICON                    "res\\icon2.ico"
+IDI_GLASS2              ICON                    "res\\icon3.ico"
+IDI_METAL2              ICON                    "res\\ico00002.ico"
+IDI_METAL1              ICON                    "res\\ico00003.ico"
+IDI_MIRROR2             ICON                    "res\\ico00004.ico"
+IDI_MIRROR1             ICON                    "res\\ico00005.ico"
+IDI_OBJ_BAKED2          ICON                    "res\\ico00006.ico"
+IDI_OBJ_BAKED1          ICON                    "res\\ico00007.ico"
+IDI_SKYBOX2             ICON                    "res\\ico00008.ico"
+IDI_SKYBOX1             ICON                    "res\\ico00009.ico"
+IDI_GLASS1              ICON                    "res\\ico00010.ico"
+IDI_BRIGHTFLOOR1        ICON                    "res\\ico00011.ico"
+IDI_BRIGHTFLOOR2        ICON                    "res\\ico00012.ico"
+IDI_AVINODE1            ICON                    "res\\ico00013.ico"
+IDI_AVINODE2            ICON                    "res\\ico00014.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+NIDR_MAINFRAME          BITMAP                  "res\\Toolbar.bmp"
+NIDB_WORKSPACE          BITMAP                  "res\\workspace.bmp"
+NIDB_TOOLBAR256         BITMAP                  "res\\Toolbar256.bmp"
+NIDB_TABICON            BITMAP                  "res\\tabIcon.bmp"
+NIDR_FULLSCREEN         BITMAP                  "res\\toolbar1.bmp"
+IDR_TOOLEDIT            BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLEDIT2           BITMAP                  "res\\bmp00002.bmp"
+IDR_TOOLTEXIAO          BITMAP                  "res\\toolbar2.bmp"
+IDR_TOOLGIS             BITMAP                  "res\\toolgis.bmp"
+IDB_SPLASH              BITMAP                  "res\\Splsh16.bmp"
+IDB_BACK                BITMAP                  "res\\fore.bmp"
+IDB_FORE                BITMAP                  "res\\back.bmp"
+NIDB_TOOLBAR256_S       BITMAP                  "res\\Toolbar256_s.bmp"
+IDR_TOOLBAR_EDIT        BITMAP                  "res\\Toolbar_edit.bmp"
+IDB_BITMAP_EDIT         BITMAP                  "res\\Toolbar_edit.bmp"
+IDB_BITMAP_EDIT_S       BITMAP                  "res\\Toolbar_edit_s.bmp"
+IDR_TOOLBAR1_EDIT       BITMAP                  "res\\bmp00001.bmp"
+IDR_TOOLBAR_CAMERA      BITMAP                  "res\\bmp00003.bmp"
+IDB_BITMAP_CAMERA       BITMAP                  "res\\Toolbar_camera.bmp"
+IDB_BITMAP_CAMERA_S     BITMAP                  "res\\Toolbar_camera_s.bmp"
+IDB_BITMAP5             BITMAP                  "res\\logo.bmp"
+IDB_ICON_VGSC_TABS      BITMAP                  "res\\icons.bmp"
+IDR_TOOLBAR_SR_SHAPE    BITMAP                  "res\\Toolbar_edit_sr_shape.bmp"
+IDR_TOOLBAR_SR_MODE     BITMAP                  "res\\Toolbar_edit_sr_mode.bmp"
+IDR_TOOLBAR_SM_INCLUDE  BITMAP                  "res\\Toolbar_edit_sm_include.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+NIDR_MAINFRAME TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_SCENE_READ
+    BUTTON      ID_SCENE_SAVE
+    BUTTON      ID_SCENE_RESET
+    SEPARATOR
+    BUTTON      NID_VGM_IMPORT_VGM
+    BUTTON      NID_VGI_IMPORT_VGI
+    BUTTON      NID_FILE_IMPORT_MOD
+    SEPARATOR
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_APP_ABOUT
+END
+
+NIDR_FULLSCREEN TOOLBAR  16, 15
+BEGIN
+    BUTTON      NID_SFULLSCREEN
+END
+
+IDR_TOOLBAR1_EDIT TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_DUMMY_SR_SHPAE
+    BUTTON      ID_DUMMY_SR_MODE
+    BUTTON      ID_DUMMY_SM_INCLUDE
+    BUTTON      ID_EDIT_FIND_OBJ
+    BUTTON      ID_EDIT_SELECT_CLEAR
+END
+
+IDR_TOOLBAR_CAMERA TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_CREATCAM
+    BUTTON      ID_SWITCHCAM
+    BUTTON      ID_POSITIONTOOBJ
+    BUTTON      ID_VCR_DEACCE
+    BUTTON      ID_VCR_ACCE
+END
+
+IDR_TOOLBAR_SR_SHAPE TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_EDIT_SELECT_RECT
+    BUTTON      ID_EDIT_SELECT_POLYGON
+END
+
+IDR_TOOLBAR_SR_MODE TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_EDIT_SELECT_REGION_NEW
+    BUTTON      ID_EDIT_SELECT_REGION_ADD
+    BUTTON      ID_EDIT_SELECT_REGION_SUBTRACT
+    BUTTON      ID_EDIT_SELECT_REGION_INTERSECT
+END
+
+IDR_TOOLBAR_SM_INCLUDE TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_EDIT_SELECT_MODE_INTERSECT
+    BUTTON      ID_EDIT_SELECT_MODE_INCLUDE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+NIDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开场景(&Open)",                 ID_SCENE_READ
+        MENUITEM "保存场景(&Save)",                 ID_SCENE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "连接服务器(Co&nnet)",              ID_CONNET
+        MENUITEM SEPARATOR
+        MENUITEM "导入(&Import)",                 ID_FILE_IMPORT
+        MENUITEM "导出(&Export)",                 ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "开始切块(&Clip Scene)",           ID_BEGIN_CUT_BLOCK
+        MENUITEM "切块保存(Clip S&ave)",            ID_SAVE_CUT_BLOCK
+        MENUITEM "增量更新(Increase &Update)",      ID_TEST_ADDUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "生成EXE(&Publish)",             ID_SCENE_PUBLISH
+        MENUITEM SEPARATOR
+        MENUITEM "复位(&Reset)",                  ID_SCENE_RESET
+        MENUITEM "退出(E&xit)",                   ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏(&Toolbars)"
+        BEGIN
+            MENUITEM "view",                        NID_VIEW_TOOLBARS
+        END
+        MENUITEM "状态栏(&Status Bar)",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "输出栏(&Output View)",           NID_VIEW_OUTPUT
+        MENUITEM "节点视图(&NodeList View)",        NID_VIEW_WORKSPACE
+        MENUITEM "属性视图(&Property View)",        NID_VIEW_PROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "程序外观(&App Look)"
+        BEGIN
+            MENUITEM "Office &2000",                NID_VIEW_APPLOOK_2000
+            MENUITEM "Office &XP",                  NID_VIEW_APPLOOK_XP
+            MENUITEM "Office 200&3",                NID_VIEW_APPLOOK_2003
+            MENUITEM "Visual Studio 200&5",         NID_VIEW_APPLOOK_VS2005
+            MENUITEM "&Windows XP",                 NID_VIEW_APPLOOK_WIN_XP
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 NID_VIEW_APPLOOK_2007
+                MENUITEM "B&lack Style",                NID_VIEW_APPLOOK_2007_1
+                MENUITEM "&Silver Style",               NID_VIEW_APPLOOK_2007_2
+                MENUITEM "&Aqua Style",                 NID_VIEW_APPLOOK_2007_3
+            END
+            MENUITEM "Visual Studio 200&8",         NID_VIEW_APPLOOK_VS2008
+        END
+        MENUITEM "全屏显示(&Fullscreen)\t\t(Ctrl+F)", NID_VIEW_FULLSCREEN
+        MENUITEM "网格/实体显示模式(Wireframe/Solid Mode)", ID_MESH_OR_LINE
+        MENUITEM SEPARATOR
+        MENUITEM "轴测图西北(NorthWest/Axonometric)", ID_AXONOVIEW_NORTHWEST
+        MENUITEM "轴测图西南(SouthWest/Axonometric)", ID_AXONOVIEW_SOUTHWEST
+        MENUITEM "轴测图东北(NorthEast/Axonometric)", ID_AXONOVIEW_NORTHEAST
+        MENUITEM "轴测图东南(SouthEast/Axonometric)", ID_AXONOVIEW_SOUTHEAST
+        MENUITEM SEPARATOR
+        MENUITEM "指南针(&Compass)",               33300
+        MENUITEM "鹰眼(&Hawkeye)",                33301
+        MENUITEM "输出鹰眼图像(&Output Hawkeye Image)", 33302
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "平移(&Translate)",              ID_EDIT_TRANSLATE
+        MENUITEM "旋转(&Rotate)",                 ID_EDIT_ROTATE
+        MENUITEM "缩放(&Scale)",                  ID_EDIT_SCALE
+        MENUITEM SEPARATOR
+        MENUITEM "撤销(&Undo)",                   ID_UNDO
+        MENUITEM "重做(&Redo)",                   ID_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "全部选择(&All)",                  ID_EDIT_SELECT_ALL
+        MENUITEM "取消选择(&Unselect)",             ID_EDIT_SELECT_CLEAR
+        MENUITEM "反向选择(R&everse)",              ID_EDIT_SELECT_REVERSE2
+        MENUITEM SEPARATOR
+        MENUITEM "整体平移(&Tran All)",             ID_EDIT_TRANALL
+        MENUITEM "选中物体平移(Translate &Selected)", ID_TANSLATE_SELECTED
+        POPUP "半透明(&Opacity)"
+        BEGIN
+            MENUITEM "选定节点设为半透明(&Opacity)",         ID_EDIT_SET_TRANSPARENT
+            MENUITEM "选定节点取消半透明(&UnOpacity)",       ID_EDIT_SET_UNTRANSPARENT
+        END
+        POPUP "单面渲染(&Double Face Render)"
+        BEGIN
+            MENUITEM "选定节点设为单面(&Select)",           ID_EDIT_SINGLE_FACE_RENDER_SEL
+            MENUITEM "所有节点设为单面(&All)",              ID_EDIT_SINGLE_FACE_RENDER_ALL
+        END
+    END
+    POPUP "相机(&C)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "创建相机(&Create Camera)",        ID_CREATCAM
+        MENUITEM "切换相机(S&witch Camera)",        ID_SWITCHCAM
+        MENUITEM "切换至物体处(Swi&tch To)\tCtrl+Alt+S", ID_POSITIONTOOBJ
+        MENUITEM "切换至顶视图(&Top View)",           ID_SWITCH_TO_TOP_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "导出截图(Export &BMP File)",      ID_EXP_BMP
+        MENUITEM "导出视频流(Export &AVI File)",     ID_EXP_AVI
+        MENUITEM SEPARATOR
+        MENUITEM "开/关碰撞检测 (Collision Detection On/Off)", ID_COLLISION_ONOFF
+    END
+    POPUP "动画(&A)"
+    BEGIN
+        MENUITEM "关键帧动画(&Keyframe)",            NID_FILE_IMPORT_KFM
+        POPUP "漫游动画(&Roaming)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "导入动画(&Import)",               ID_ADDANIMATION
+            POPUP "录制新动画(&Record)"
+            BEGIN
+                MENUITEM "开始(&Start)",                  ID_ANI_Start
+                MENUITEM "结束(&End)",                    ID_ANI_END
+            END
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "骨骼动画(&Skeleton)",             ID_FILE_IMPORT_MS3D
+        MENUITEM "漫游动画高度位移(&Translate VCR Height)", ID_CAM_REHEIGHT
+        MENUITEM SEPARATOR
+        POPUP "播放控制(&Playcontrol)"
+        BEGIN
+            MENUITEM "加速(&Accelerate)",             ID_VCR_ACCE
+            MENUITEM "减速(&Decelerate)",             ID_VCR_DEACCE
+        END
+    END
+    POPUP "特效(&S)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "喷泉(Foun&tain)"
+        BEGIN
+            POPUP "粒子模拟"
+            BEGIN
+                MENUITEM "生成(&Generate)",               ID_SE_FOUNTAIN
+            END
+            POPUP "动态纹理"
+            BEGIN
+                MENUITEM "设置(&Config)",                 ID_CONFIGDYNBILLBOARD
+                MENUITEM "生成(&Generate)",               ID_DYNAMICBILLBOARD
+            END
+        END
+        POPUP "火(Fir&e)"
+        BEGIN
+            MENUITEM "生成(&Generate)",               ID_FIRE_ADD
+        END
+        POPUP "烟(Smo&ke)"
+        BEGIN
+            MENUITEM "生成(&Generate)",               ID_SE_SMOKE
+        END
+        POPUP "雨(&Rain)"
+        BEGIN
+            MENUITEM "开始降雨(&Begin)",                ID_RAIN
+            MENUITEM "停止降雨(&End)",                  ID_RAIN_DEL
+        END
+        POPUP "雪(Sno&w)"
+        BEGIN
+            MENUITEM "开始降雪(&Begin)",                ID_SNOW
+            MENUITEM "停止降雪(&End)",                  ID_SNOW_DEL
+        END
+        MENUITEM SEPARATOR
+        POPUP "水面生成(&Water)"
+        BEGIN
+            MENUITEM "转换物体为水面(Conver&t)",           ID_WATER_CONVERT
+            MENUITEM "修改水流方向(Direction)",           ID_WATER_DIRECTION
+        END
+        POPUP "玻璃生成(&Glass)"
+        BEGIN
+            MENUITEM "转换物体为玻璃(Conver&t)",           ID_GLASS_CONVERT
+        END
+        POPUP "光亮物体生成(&Bright)"
+        BEGIN
+            MENUITEM "转换选中物体(Conver&t)",            ID_CONVERT_BRIGTHFLOOR
+        END
+        POPUP "动态纹理生成(&Dyntexture)"
+        BEGIN
+            MENUITEM "转换成AVI纹理(Conver&t)",          ID_AVI_NODE_CONVERT
+            MENUITEM "转换成序列帧纹理(Convert)",           ID_DYNTEXTURE_CONVERT
+        END
+        MENUITEM SEPARATOR
+        POPUP "天空球生成(&Skybox)"
+        BEGIN
+            MENUITEM "转换物体为天空球(Conver&t)",          ID_SKYBOX_CONVERT
+        END
+        MENUITEM SEPARATOR
+        POPUP "植被(&Plant)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 ID_SETTREE
+        END
+        MENUITEM SEPARATOR
+        POPUP "自动建模(&Auto Build)"
+        BEGIN
+            MENUITEM "转换物体为自动建模(&Convert)",         ID_AUTOBUILD
+            MENUITEM "克隆自动建模物体(Clone)",             ID_AUTOBUILD_CLONE
+            MENUITEM "自定义体块",                       ID_SOLIDBUILD
+        END
+        MENUITEM SEPARATOR
+        POPUP "触发器(&Trigger)"
+        BEGIN
+            MENUITEM "设为触发器(&Set As Trigger)",      ID_TRIGGER_SET_AS
+            MENUITEM "配置(&Config)",                 ID_TRIGGER_CONFIG
+        END
+        MENUITEM SEPARATOR
+        POPUP "开启信息标注(&Comment)"
+        BEGIN
+            MENUITEM "显示所有标注",                      ID_ENABLE_ALLMARK
+            MENUITEM "创建信息标注",                      ID_INFORMATION_MARK
+        END
+        MENUITEM SEPARATOR
+        POPUP "日夜同步(&Day/Night Effect)"
+        BEGIN
+            MENUITEM "初始化(&Initialize)",            ID_DUSTSUN_INI
+            MENUITEM "时间调节(&Set Time )",            ID_DUSTSUN_SET
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "关于VR-GIS(&About)...",         ID_APP_ABOUT
+    END
+END
+
+NIDR_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+    END
+END
+
+NIDR_POPUP_TOOLBAR MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "Standard Toolbar",            ID_VIEW_TOOLBAR
+        MENUITEM "&Workspace",                  NID_VIEW_WORKSPACE
+        MENUITEM "&Workspace 2",                NID_VIEW_WORKSPACE2
+        MENUITEM "&Output",                     NID_VIEW_OUTPUT
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR1
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              NID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               NID_VIEW_CUSTOMIZE
+    END
+END
+
+NIDR_MENU1 MENU 
+BEGIN
+    POPUP "测试"
+    BEGIN
+        MENUITEM "testScript",                  ID_SCRIPT_TESTSCRIPT
+        POPUP "vgshape"
+        BEGIN
+            MENUITEM "read shp file",               ID_VGSHAPE_READSHPFILE
+            MENUITEM "read Grid shp file",          ID_VGSHAPE_READGRIDSHPFILE
+            MENUITEM "select shp area(Turn to Edit Mode)", ID_VGSHAPE_SELECTSHPAREA
+            MENUITEM "Save As Shape",               ID_VGSHAPE_SAVEASSHAPE
+            MENUITEM "TranslateToOrigin",           ID_VGSHAPE_TRANSLATETOORIGIN
+            MENUITEM "attach to Terrain",           ID_VGSHAPE_ATTACHTOTERRAIN
+            MENUITEM "Set Renderer Box as Filter",  ID_VGSHAPE_SETRENDERERBOXASFILTER
+        END
+        POPUP "vgPlan"
+        BEGIN
+            MENUITEM "Add Scene",                   ID_VGPLAN_ADDSECNE
+            MENUITEM "Add Ground",                  ID_VGPLAN_ADDGROUND
+            MENUITEM "Add Street",                  ID_VGPLAN_ADDSTREET
+            MENUITEM "Add Region",                  ID_VGPLAN_ADDREGION
+            MENUITEM SEPARATOR
+            MENUITEM "Set Parameter",               ID_VGPLAN_SETPARAMETER
+            MENUITEM "Generate Plan",               ID_Menu33188
+            MENUITEM SEPARATOR
+            MENUITEM "生成规划底图",                      ID_VGPLAN_GENERATEPLANMAP
+            MENUITEM "导出地图至Shp",                    ID_PLAN_EXPORTSCENE
+            MENUITEM "Add Scene",                   ID_VGPLAN_ADDSECNE
+            MENUITEM "Change Current Scene",        ID_VGPLAN_SETCURRENTSCENE
+            MENUITEM "Add Ground",                  ID_VGPLAN_ADDGROUND
+            MENUITEM "Add Street Line",             ID_VGPLAN_ADDSTREETLINE
+            MENUITEM "Add Exclusion Region",        ID_VGPLAN_ADDREGION
+            MENUITEM SEPARATOR
+            MENUITEM "Set Parameter",               ID_VGPLAN_SETPARAMETER
+            MENUITEM "Generate Plan",               ID_Menu33188
+        END
+        POPUP "Autobuilding"
+        BEGIN
+            MENUITEM "Import GemoInfo from Shp",    ID_VGSHAPE_IMPORTTEXT
+            MENUITEM SEPARATOR
+            MENUITEM "Generate Autobuild All",      ID_VGSHAPE_CACULATEPOSITION
+            MENUITEM "Generate Autobuild Selected", ID_VGSHAPE_GENERATESELECTED
+            MENUITEM "Clear plan",                  ID_VGSHAPE_CLEARPLAN
+            MENUITEM SEPARATOR
+            MENUITEM "Import RPSInfo from txt",     ID_VGSHAPE_IMPORTINFOFROMTXT
+            MENUITEM "Export ALLInfo to Shp",       ID_VGSHAPE_EXPORTSHAPEINFO
+        END
+        POPUP "多通道(&M)"
+        BEGIN
+            POPUP "服务器(&Server)"
+            BEGIN
+                MENUITEM "建立(&Build)",                  ID_SETUP_SERVER
+                MENUITEM "销毁(&Shutdown)",               ID_DESTROY_SERVER
+            END
+            POPUP "客户端(&Client)"
+            BEGIN
+                MENUITEM "连接(&Connect)",                ID_NEW_CLIENT
+                MENUITEM "注销(&Logoff)",                 ID_DEL_CLIENT
+            END
+            POPUP "通道号(C&hannel)"
+            BEGIN
+                MENUITEM "通道1(Channel 1)",              ID_CHANNEL_1
+                MENUITEM "通道0(Channel 0)",              ID_CHANNEL_0
+                MENUITEM "通道-1(Channel -1)",            ID_CHANNEL_m1
+            END
+        END
+        POPUP "工具(&K)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "VGM产生器(Convert MOD to VG&M)", ID_TOOL_MAKER_VGM
+            MENUITEM "VGI产生器(Convert DDS to VG&I)", ID_TOOL_MAKER_VGI
+            MENUITEM "DDS产生器(Convert JPG to DD&S)", ID_TOOL_MAKER_DDS
+            MENUITEM SEPARATOR
+            POPUP "优化(&Optimize)"
+            BEGIN
+                MENUITEM "可视集优化(&Visibleset Optimize)", ID_OCC_SWITCH
+                MENUITEM "检测模型分布(&Show Models)",        ID_SHOW_MODELS
+            END
+        END
+        MENUITEM "选择(&Select)",                 ID_EDIT_SELECT
+        POPUP "新特效"
+        BEGIN
+            MENUITEM "配置背景(&B)",                    ID_VGVI_BG_CONFIG
+        END
+        POPUP "配置(Z)"
+        BEGIN
+            POPUP "地形模块(&Terrain Module)"
+            BEGIN
+                MENUITEM "加载(&Load Terrain DLL)",       ID_LOAD_VTR_DLL
+                MENUITEM "卸载(&Unload Terrain DLL)",     ID_UNLOAD_VTR_DLL
+            END
+            POPUP "GIS模块(&GIS Module)"
+            BEGIN
+                MENUITEM "加载(&Load Gis DLL)",           ID_GIS_LOAD_DLL
+                MENUITEM "卸载(&UnLoad Gis DLL)",         ID_GIS_UNLOAD_DLL
+            END
+            POPUP "矢量模块(&Shape Module)"
+            BEGIN
+                MENUITEM "加载(&Load Shp DLL)",           ID_SHP_LOAD_DLL
+                MENUITEM "卸载(&Unload Shp DLL)",         ID_SHP_UNLOAD_DLL
+            END
+            POPUP "声音模块(&Sound Module)"
+            BEGIN
+                MENUITEM "soundload",                   ID_SOUND_LOAD_DLL
+                MENUITEM "soundunload",                 ID_SOUND_UNLOAD_DLL
+            END
+            POPUP "阴影分析模块(Sola&r Module)"
+            BEGIN
+                MENUITEM "load",                        ID_SOLAR_LOAD_DLL
+                MENUITEM "unload",                      ID_SOLAR_UNLOAD_DLL
+            END
+            POPUP "LOGO模块(&Logo Module)"
+            BEGIN
+                MENUITEM "加载(&Load Logo DLL )",         ID_LOAD_LOGO_DLL
+                MENUITEM "卸载(&Unload Logo DLL)",        ID_UNLOAD_LOGO_DLL
+            END
+            POPUP "字体模块(&Font Module)"
+            BEGIN
+                MENUITEM "加载(&Load Font DLL )",         ID_LOAD_FONT_DLL
+                MENUITEM "卸载(&Unload Font DLL)",        ID_UNLOAD_FONT_DLL
+            END
+            POPUP "数据库模块(&Database Module)"
+            BEGIN
+                MENUITEM "加载(&Load Database DLL )",     ID_LOAD_DB_DLL
+                MENUITEM "卸载(&Unload Database DLL)",    ID_UNLOAD_DB_DLL
+            END
+            POPUP "script"
+            BEGIN
+                MENUITEM "load",                        ID_SCRIPT_LOAD
+                MENUITEM "unload",                      ID_SCRIPT_UNLOAD
+            END
+            POPUP "规划模块"
+            BEGIN
+                MENUITEM "load",                        ID_PLANDLL_LOAD
+                MENUITEM "unload",                      ID_PLANDLL_UNLOAD
+            END
+        END
+        POPUP "音效(&Sound)"
+        BEGIN
+            MENUITEM SEPARATOR
+            POPUP "立体音效(S&tereo Sound)"
+            BEGIN
+                MENUITEM "添加至当前位置(&Add)",               ID_3DSOUND_ADD
+            END
+            POPUP "背景音效(&Background Sound)"
+            BEGIN
+                MENUITEM "设置(&Config)",                 ID_BACKSOUND_SET
+            END
+            MENUITEM SEPARATOR
+        END
+        POPUP "GIS分析(&G)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "坐标查询(&Query Spatial Positions)", IDM_Zuobiao
+            MENUITEM "距离测量(Measure S&patial Distances)", IDM_Juli
+            MENUITEM "面积测量(Measure &Spatial Aeras)", IDM_Mianji
+            MENUITEM "体积测量(&Measure Spatial Volumes)", IDM_Tiji
+            MENUITEM "道路匹配(Road &Match)",           IDM_GISMATCH
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "发布(&Publish)"
+        BEGIN
+            MENUITEM "资源收集(Resource &Collect)",     ID_PUBLISH_COLLECT
+            MENUITEM "打包成EXE(&Package EXE)",        ID_PUBLISH_PACKAGE_EXE
+        END
+        POPUP "阴影分析(&A)"
+        BEGIN
+            MENUITEM "load dll",                    ID_VGSO_LOAD_DLL
+            MENUITEM "开启阴影(Turn &On Shadow)",       ID_VGSHADOW_TURNONSHADOW
+            MENUITEM "关闭阴影(Turn &Off Shadow)",      ID_VGSHADOW_TURNOFFSHADOW
+            MENUITEM "设置光线方向(Set Light &Direction)", ID_VGSHADOW_CHANGE
+            MENUITEM "选择投影的物体(&Select Shadow Object)", ID_VGSHADOW_SELECTSHADOWCASTOBJECTS
+            MENUITEM "日照分析(Solar &Analysis)",       ID_VGSHADOW_SOLARANALYSIS
+            MENUITEM "unload dll",                  ID_VGSO_UNLOAD_DLL
+            MENUITEM "日照分析(Sunlight  Analysis)",    ID_GIS_SUN
+        END
+        POPUP "脚本系统(&T)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "运行脚本文件(&Run Script)",         ID_SCRIPT_RUNFILE
+            MENUITEM SEPARATOR
+            MENUITEM "脚本命令台(&Script Console)",      ID_SCRIPT_CONSOLE
+            MENUITEM SEPARATOR
+            MENUITEM "用户脚本配置(User Script Conf&ig)", ID_VGSC_USER_SCRIPT_CONFIG
+        END
+        POPUP "地形(&T)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "打开地形(Open &Terrain)",         ID_VGTERRAIN_NEW_VTR
+            MENUITEM SEPARATOR
+            MENUITEM "开启地形透明(Enable &Alpha Rendering)", ID_VGT_BLEND
+            MENUITEM "开启地形碰撞(Collision Detec&t)",   ID_TERRAIN_COLLISION_DETECT
+            MENUITEM "开启地形渲染(Turn on R&endering)",  ID_32972
+            MENUITEM "卸载地形数据(&Drop Terrain Data)",  ID_32973
+            MENUITEM SEPARATOR
+            MENUITEM "剖面分析(高度曲线模式)(&Cutting Surface Analysis)", ID_32974
+            MENUITEM "剖面分析(空间裁切模式)(C&utting Surface Analysis)", ID_VGT_CUT_ANALYSIS2
+            MENUITEM "地形土方分析(Terrain Leveling)",    ID_TERRAIN_LEVELING
+            MENUITEM SEPARATOR
+            MENUITEM "模型贴地(&Attach Objects)",       ID_VGT_ATTACH
+            MENUITEM "将地形坐标映射到原点(&Mapping Coordinates)", ID_VGT_MAPPING_ORIGIN
+            MENUITEM SEPARATOR
+            MENUITEM "地形修改还原(Terrain Recovery)",    ID_33109
+            MENUITEM "地形修改保存(Terrain &Save)",       ID_VGT_TERRAIN_SAVE
+            MENUITEM SEPARATOR
+            MENUITEM "地形切块保存(Cut Terrai&n To Save)", ID_VGT_CUTAREA
+            MENUITEM "通视分析(&Visibility Analysis)",  ID_VGT_VISIBILITY2
+        END
+        POPUP "体块规划(&P)"
+        BEGIN
+            MENUITEM "添加新方案(&New Plan)",            ID_VGPLAN_ADDNEW
+            MENUITEM "生成栅格(&Generate Grid)",        ID_VGPLAN_CGRID
+            MENUITEM "生成规划(&Form Plan)",            ID_VGPLAN_GENPLAN
+            MENUITEM "方案显示(&Show Plan)",            ID_VGPLAN_OUTPUT
+            MENUITEM SEPARATOR
+            POPUP "查询规划信息(&Query Plan Info)"
+            BEGIN
+                MENUITEM "绿化率(Query &Green Ratio)",     ID_VGSHAPE_QUERY_GREEN_RATIO
+                MENUITEM "容积率(Query &Plot Ratio)",      ID_QUERYPLANINFO_QUERYPLOTRATIO
+            END
+        END
+        POPUP "矢量(&V)"
+        BEGIN
+            MENUITEM "导入SHP文件(&Read SHP File)",     ID_VGSHAPE_READSHPFILE
+            MENUITEM "导入SHP网格文件(Read &Grid SHP File)", ID_VGSHAPE_READGRIDSHPFILE
+            MENUITEM "切换至编辑模式(Turn to &Edit Mode)", ID_VGSHAPE_SELECTSHPAREA
+            MENUITEM "保存SHP文件(&Save As Shape)",     ID_VGSHAPE_SAVEASSHAPE
+            MENUITEM "移至地形原点(Translate To &Origin)", ID_VGSHAPE_TRANSLATETOORIGIN
+            MENUITEM "矢量图层贴地(&Attach To Terrain)",  ID_VGSHAPE_ATTACHTOTERRAIN
+            MENUITEM "整体平移矢量图层(&Translate All)",    ID_TRIGGER_CONFIG
+        END
+        POPUP "数据库(&D)"
+        BEGIN
+            MENUITEM "链接数据库(&Link Database)",       ID_NDB_CONNECT
+            MENUITEM "断开数据库链接(Cut &Off Linkage)",   ID_NDB_DISCONNECT
+            MENUITEM "自定义查询(&Custom Query)",        ID_NDB_CONDITION
+        END
+        POPUP "特效"
+        BEGIN
+            POPUP "镜子生成(&Mirror)"
+            BEGIN
+                MENUITEM "转换物体为镜子(Conver&t)",           ID_MIRROR_CONVERT
+            END
+            POPUP "金属生成(M&etal)"
+            BEGIN
+                MENUITEM "转换物体为金属(Conver&t)",           ID_METAL_CONVERT
+            END
+            MENUITEM "优化植被(Optimize Planting)",     ID_OptPlant
+            POPUP "植被(&Plant)"
+            BEGIN
+                MENUITEM SEPARATOR
+                MENUITEM "设置(&Config)",                 ID_SETTREE
+                MENUITEM SEPARATOR
+                MENUITEM "开始植树(&Start Planting)",       ID_BEGINPLANT
+                MENUITEM "沿线植树(Planting in &Lines)",    ID_PLANTINLINE
+            END
+        END
+        POPUP "选择模式"
+        BEGIN
+            MENUITEM "按名称选择(&Find By Name)",        ID_EDIT_FIND_OBJ
+            MENUITEM "矩形框选择(&Rect)",                ID_EDIT_SELECT_RECT
+            MENUITEM "多边形选择(&Polygon)",             ID_EDIT_SELECT_POLYGON
+        END
+        POPUP "选区模式"
+        BEGIN
+            MENUITEM "新建选区(&New)",                  ID_EDIT_SELECT_REGION_NEW
+            MENUITEM "添加到选区(&Add)",                 ID_EDIT_SELECT_REGION_ADD
+            MENUITEM "从选区减去(&Subtract)",            ID_EDIT_SELECT_REGION_SUBTRACT
+            MENUITEM "与选区交叉(&Intersect)",           ID_EDIT_SELECT_REGION_INTERSECT
+        END
+    END
+END
+
+IDR_RIGHT_FLOATINGMENU MENU 
+BEGIN
+    POPUP "右键快捷菜单", GRAYED
+    BEGIN
+        MENUITEM "停止特效生成",                      ID_STOPDEMOCREATE
+        MENUITEM "进入视图模式（ESC退出）",               ID_ROTOVIEW
+        MENUITEM "全屏\\退出",                      ID_ONOFFFULLSCREEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+NIDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "B",            ID_ANI_Start,           VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND_OBJ,       VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_EDIT_ROTATE,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_TRANSLATE,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_IMPORT,         VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_REDO,                VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SCENE_SAVE,          VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_SWITCH_TO_TOP_VIEW,  VIRTKEY, NOINVERT
+    "Z",            ID_UNDO,                VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_VGTERRAIN_NEW_VTR,   VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_AXONOVIEW_SOUTHEAST, VIRTKEY, NOINVERT
+    VK_F3,          ID_AXONOVIEW_NORTHEAST, VIRTKEY, NOINVERT
+    VK_F4,          ID_AXONOVIEW_SOUTHWEST, VIRTKEY, NOINVERT
+    VK_F5,          ID_AXONOVIEW_NORTHWEST, VIRTKEY, NOINVERT
+    "P",            ID_SWITCH_TO_PERSPECT_VIEW, VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "00409004e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "vgFrameWork.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "vgFrameWork.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_CURSOR         CURSOR                  "res\\hmove.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LOGON DIALOGEX 0, 0, 186, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "建立远程连接"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,31,128,51,15
+    CONTROL         "",IDC_CONNET_IP,"SysIPAddress32",WS_TABSTOP,44,20,82,12
+    PUSHBUTTON      "连接",IDC_CONNECT_SERVER,130,19,42,14
+    GROUPBOX        "连接远程服务器",IDC_STATIC,7,7,172,34
+    COMBOBOX        IDC_SCENE_COMBO,54,57,102,55,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CONNECT_USER,54,76,102,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONNECT_PASSWORD,54,95,102,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "服务器",IDC_STATIC,15,22,24,11
+    LTEXT           "场景",IDC_STATIC,30,60,17,11
+    GROUPBOX        "登录信息",IDC_STATIC,7,46,172,78
+    LTEXT           "账户",IDC_STATIC,30,79,17,11
+    LTEXT           "密码",IDC_STATIC,30,97,17,11
+    PUSHBUTTON      "退出",IDC_BUTTON2,101,128,51,15
+    LTEXT           "状态 - 连接空闲",IDC_CONNECT_STATUES,65,112,67,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    NIDR_MAINFRAME          "VR-GIS Platform 2.0\n\nVR-GIS Platform\n\n\nVR-GIS Platform.Document\nVR-GIS Platform.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "VR-GIS Platform 2.0"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_LABEL      "帧速"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文件\n新建"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Send the document directly to the default printer without making changes\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    ID_INDICATOR_PROGRESS   "Progress"
+END
+
+STRINGTABLE 
+BEGIN
+    NID_VIEW_CUSTOMIZE      "Customize toolbars and menus.\nCustomize"
+    NID_VIEW_USER_TOOLBAR1  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR2  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR3  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR4  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR5  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR6  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR7  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR8  "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_USER_TOOLBAR9  "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    NIDS_MAIN_TOOLBAR       "Standard"
+END
+
+STRINGTABLE 
+BEGIN
+    NID_VIEW_USER_TOOLBAR10 "Show or hide the user toolbar\nToggle User ToolBar"
+    NID_VIEW_APPLOOK_2000   "Activate Office 2000 application look\nOffice 2000 Look"
+    NID_VIEW_APPLOOK_XP     "Activate Office XP application look\nOffice XP Look"
+    NID_VIEW_APPLOOK_2003   "Activate Office 2003 application look\nOffice 2003 Look"
+    NID_VIEW_APPLOOK_WIN_XP "Activate Windows XP application look\nWindows XP Look"
+    NID_VIEW_APPLOOK_VS2005 "Activate Visual Studio 2005 application look\nVS 2005 Look"
+    NID_VIEW_APPLOOK_2007   "Activate Office 2007 application look\nOffice 2007 Look (Blue)"
+    NID_VIEW_APPLOOK_2007_1 "Activate Office 2007 application look\nOffice 2007 Look (Black)"
+    NID_VIEW_APPLOOK_2007_2 "Activate Office 2007 application look\nOffice 2007 Look (Silver)"
+    NID_VIEW_APPLOOK_2007_3 "Activate Office 2007 application look\nOffice 2007 Look (Aqua)"
+    NID_VIEW_APPLOOK_VS2008 "Activate Visual Studio 2008 application look\nVS 2008 Look"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCENE_READ           "ID_SCENE_READ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CREATCAM             "新建相机"
+    ID_SWITCHCAM            "切换相机"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POSITIONTOOBJ        "到达物体处"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCENE_RESET          "重置场景"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(AFX_TARG_ENU)
+#if defined(APSTUDIO_INVOKED)
+NIDR_MAINFRAME$(AFX_TARG_ENU) MENU 
+#else
+NIDR_MAINFRAME MENU 
+#endif
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       ID_SCENE_READ
+        MENUITEM "&Save",                       ID_SCENE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Import",                     ID_FILE_IMPORT
+        MENUITEM "&Export",                     ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset",                      ID_SCENE_RESET
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "view",                        NID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Output View",                NID_VIEW_OUTPUT
+        MENUITEM "&NodeList View",              NID_VIEW_WORKSPACE
+        MENUITEM "&Property View",              NID_VIEW_PROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "&App Look"
+        BEGIN
+            MENUITEM "Office &2000",                NID_VIEW_APPLOOK_2000
+            MENUITEM "Office &XP",                  NID_VIEW_APPLOOK_XP
+            MENUITEM "Office 200&3",                NID_VIEW_APPLOOK_2003
+            MENUITEM "Visual Studio 200&5",         NID_VIEW_APPLOOK_VS2005
+            MENUITEM "&Windows XP",                 NID_VIEW_APPLOOK_WIN_XP
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 NID_VIEW_APPLOOK_2007
+                MENUITEM "B&lack Style",                NID_VIEW_APPLOOK_2007_1
+                MENUITEM "&Silver Style",               NID_VIEW_APPLOOK_2007_2
+                MENUITEM "&Aqua Style",                 NID_VIEW_APPLOOK_2007_3
+            END
+            MENUITEM "Visual Studio 200&8",         NID_VIEW_APPLOOK_VS2008
+        END
+        MENUITEM "&Fullscreen\t\tCtrl+F",       NID_VIEW_FULLSCREEN
+        MENUITEM "Wireframe/Solid Mode",        ID_MESH_OR_LINE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Unselect",                   ID_EDIT_SELECT_CLEAR
+        MENUITEM "&Find Object",                ID_EDIT_FIND_OBJ
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo",                       ID_UNDO
+        MENUITEM "&Redo",                       ID_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Tran All",                   ID_EDIT_TRANALL
+        MENUITEM "Translate &Selected",         ID_TANSLATE_SELECTED
+        POPUP "Transparent"
+        BEGIN
+            MENUITEM "Opacity &Selected",           ID_EDIT_SET_TRANSPARENT
+            MENUITEM "Opacity &All",                ID_TEST_MOD_OPACITY_ALL
+        END
+    END
+    POPUP "&GIS"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Query Spatial Positions",    IDM_Zuobiao
+        MENUITEM "Measure S&patial Distances",  IDM_Juli
+        MENUITEM "Measure &Spatial Aeras",      IDM_Mianji
+        MENUITEM SEPARATOR
+        MENUITEM "Roa&d GIS Match",             IDM_GISMATCH
+    END
+    POPUP "&Camera"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Create Camera",              ID_CREATCAM
+        MENUITEM "S&witch Camera",              ID_SWITCHCAM
+        MENUITEM "Swi&tch To\tCtrl+Alt+S",      ID_POSITIONTOOBJ
+        MENUITEM SEPARATOR
+        MENUITEM "Export &BMP File",            ID_EXP_BMP
+        MENUITEM "Export &AVI File",            ID_EXP_AVI
+        MENUITEM SEPARATOR
+        MENUITEM "Collision Detection On/Off",  ID_COLLISION_ONOFF
+    END
+    POPUP "&Animation"
+    BEGIN
+        MENUITEM "&Keyframe",                   NID_FILE_IMPORT_KFM
+        POPUP "&Roaming"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Import",                     ID_ADDANIMATION
+            POPUP "&Record"
+            BEGIN
+                MENUITEM "&Start",                      ID_ANI_Start
+                MENUITEM "&End",                        ID_ANI_END
+            END
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "&Translate VCR Height",       ID_CAM_REHEIGHT
+    END
+    POPUP "&Terrain"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Open &Terrain",               ID_VGTERRAIN_NEW_VTR
+        MENUITEM SEPARATOR
+        MENUITEM "Enable &Alpha Rendering",     ID_VGT_BLEND
+        MENUITEM "Collision Detec&t",           ID_TERRAIN_COLLISION_DETECT
+        MENUITEM "Turn on R&endering",          ID_32972
+        MENUITEM "&Drop Terrain Data",          ID_32973
+        MENUITEM SEPARATOR
+        MENUITEM "&Cutting Surface Analysis",   ID_32974
+        MENUITEM "C&utting Surface Analysis",   ID_VGT_CUT_ANALYSIS2
+        MENUITEM "Terrain Leveling",            ID_TERRAIN_LEVELING
+        MENUITEM SEPARATOR
+        MENUITEM "&Attach Objects",             ID_VGT_ATTACH
+        MENUITEM "&Mapping Coordinates",        ID_VGT_MAPPING_ORIGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Terrain Recovery",            ID_33109
+        MENUITEM "Terrain &Save",               ID_VGT_TERRAIN_SAVE
+        MENUITEM SEPARATOR
+    END
+    POPUP "Effect&s"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "Foun&tain"
+        BEGIN
+            MENUITEM "&Generate",                   ID_SE_FOUNTAIN
+        END
+        POPUP "Fir&e"
+        BEGIN
+            MENUITEM "&Generate",                   ID_FIRE_ADD
+        END
+        POPUP "Smo&ke"
+        BEGIN
+            MENUITEM "&Generate",                   ID_SE_SMOKE
+        END
+        POPUP "&Rain"
+        BEGIN
+            MENUITEM "&Begin",                      ID_RAIN
+            MENUITEM "&End",                        ID_RAIN_DEL
+        END
+        POPUP "Sno&w"
+        BEGIN
+            MENUITEM "&Begin",                      ID_SNOW
+            MENUITEM "&End",                        ID_SNOW_DEL
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Water"
+        BEGIN
+            MENUITEM "Conver&t",                    ID_WATER_CONVERT
+        END
+        POPUP "&Glass"
+        BEGIN
+            MENUITEM "Conver&t",                    ID_GLASS_CONVERT
+        END
+        POPUP "&Bright"
+        BEGIN
+            MENUITEM "Conver&t",                    ID_CONVERT_BRIGTHFLOOR
+        END
+        POPUP "&Dyntexture"
+        BEGIN
+            MENUITEM "Conver&t",                    ID_AVI_NODE_CONVERT
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Skybox"
+        BEGIN
+            MENUITEM "Conver&t",                    ID_SKYBOX_CONVERT
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Plant"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Config",                     ID_SETTREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Start Planting",             ID_BEGINPLANT
+            MENUITEM "Planting in &Lines",          ID_PLANTINLINE
+            MENUITEM SEPARATOR
+            MENUITEM "Optimize Planting",           ID_OptPlant
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Sound"
+        BEGIN
+            MENUITEM SEPARATOR
+            POPUP "S&tereo Sound"
+            BEGIN
+                MENUITEM "&Add",                        ID_3DSOUND_ADD
+            END
+            POPUP "&Background Sound"
+            BEGIN
+                MENUITEM "&Config",                     ID_BACKSOUND_SET
+            END
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Auto Build"
+        BEGIN
+            MENUITEM "&Convert",                    ID_AUTOBUILD
+            MENUITEM "Clone",                       ID_AUTOBUILD_CLONE
+        END
+    END
+    POPUP "&Vector"
+    BEGIN
+        MENUITEM "Shape&Show Layers",           ID_VECTOR_SHP_SHOW
+        MENUITEM "Shape&Export Records",        ID_VECTOR_SHP_EXPORT2DB
+        MENUITEM "Shape&Attach Terrain",        ID_VECTOR_SHP_ATTACH_TERRAIN
+        MENUITEM "Shape&Translate Layers",      ID_VECTOR_SHP_TRAN_LAYER
+        MENUITEM "&Edit State",                 ID_VECTOR_SHP_EDIT_STATE
+        MENUITEM "ShapeInquire Green Ratio",    ID_VECTOR_SHP_GREEN_RATIO
+    END
+    POPUP "Scrip&t"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Run Script",                 ID_SCRIPT_RUNFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Script Console",             ID_SCRIPT_CONSOLE
+        MENUITEM SEPARATOR
+        MENUITEM "User Script Conf&ig",         ID_VGSC_USER_SCRIPT_CONFIG
+    END
+    POPUP "Sh&ape"
+    BEGIN
+        MENUITEM "read shp file",               ID_VGSHAPE_READSHPFILE
+        MENUITEM "read Grid shp file",          ID_VGSHAPE_READGRIDSHPFILE
+        MENUITEM "select shp areaTurn to Edit Mode", ID_VGSHAPE_SELECTSHPAREA
+        MENUITEM "Save As Shape",               ID_VGSHAPE_SAVEASSHAPE
+        MENUITEM "TranslateToOrigin",           ID_VGSHAPE_TRANSLATETOORIGIN
+        MENUITEM "attach to Terrain",           ID_VGSHAPE_ATTACHTOTERRAIN
+        MENUITEM "Set Renderer Box as Filter",  ID_VGSHAPE_SETRENDERERBOXASFILTER
+        POPUP "Autobuilding"
+        BEGIN
+            MENUITEM "Import GemoInfo from Shp",    ID_VGSHAPE_IMPORTTEXT
+            MENUITEM SEPARATOR
+            MENUITEM "Generate Autobuild All",      ID_VGSHAPE_CACULATEPOSITION
+            MENUITEM "Generate Autobuild Selected", ID_VGSHAPE_GENERATESELECTED
+            MENUITEM "Clear plan",                  ID_VGSHAPE_CLEARPLAN
+        END
+        POPUP "Autobuild"
+        BEGIN
+            MENUITEM "Close Info File",             ID_AUTOBUILDING_CLOSEINFOFILE
+            MENUITEM "Import RPSInfo from txt",     ID_VGSHAPE_IMPORTINFOFROMTXT
+            MENUITEM "Export ALLInfo to Shp",       ID_VGSHAPE_EXPORTSHAPEINFO
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "VR-GIS &About...",            ID_APP_ABOUT
+    END
+END
+#endif
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\vgFrameWork.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE0F330D-1D65-4EAA-9808-3295593536F6}</ProjectGuid>
+    <RootNamespace>vgLibraryDLL</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;VGK_DLL;VGK_NONCLIENT_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)..\lib\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;VGK_DLL;VGK_NONCLIENT_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(SolutionDir)..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgConf\CLinkedList.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoConfigInterface.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoConfigUtility.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoExeConfig.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoExeConfigRegProxy.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoProjectConfig.h" />
+    <ClInclude Include="..\..\include\vgConf\vgcoProjectConfigRegProxy.h" />
+    <ClInclude Include="..\..\include\vgConf\wtlstring.h" />
+    <ClInclude Include="..\..\include\vgConf\XmlParser.h" />
+    <ClInclude Include="..\..\include\vgConf\XMLProfile.h" />
+    <ClInclude Include="..\..\include\vgKernel\Crc32Static.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractEntry.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTree.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTreeFac.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkAbstractTreeFacMgr.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkAxis.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkBox.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkBox3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCamMgrHolder.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCamMgrImpl.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkClassFactory.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkClassFactoryManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkClassIdentify.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkColorableObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkColorVal.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCommandManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkConvertUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCoordSystem.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCrcUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkCurrentProgram.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkDirectInputDefinition.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkDissolveObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkDynamicLibraryUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkEditableInterface.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkEternityInterface.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkException.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkExportManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkFlickerObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkForward.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkGpuManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkGpuSupport.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkImagePos.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkImageRect.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkInputCodeDef.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkInputSystem.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersector.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersectSegment3Box3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkIntersectSegment3Triangle3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkLog.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkLogManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkMat4.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkMath.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkOcclusionInterface.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkOpenGLSupport.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkOperation.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPlane.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPlugin.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginLoader.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginLoaderOnString.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPluginRenderCmd.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPointInPolygon.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPolygon2D.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkProcessObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkProperty.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPropertyManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkPropertyObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkQuat.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRay.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommand.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommandManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderCommandPriority.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderer.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererData.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererDataInterface.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererHolder.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererHolderManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRendererObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRenderMngCommand.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkRgbaQuad.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSegment3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectionInterface.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSelectObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializableFactory.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializableObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializer.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSerializerManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkShadowCastObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSharePtr.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSingleton.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSingletonLifeTimeDefine.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStandardOutput.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStreamReader.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStreamWriter.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStringPairVector.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStringUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkStringVector.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkSystemUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTimelineManager.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTimelineObserver.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTimer.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTrace.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTransparentObject.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkTriangle3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkUniqueID.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkVec2.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkVec3.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkWarning.h" />
+    <ClInclude Include="..\..\include\vgKernel\vgkWriteUtility.h" />
+    <ClInclude Include="..\..\include\vgKernel\Win32InputBox.h" />
+    <ClInclude Include="..\..\include\vgThreads\AutoEvent.h" />
+    <ClInclude Include="..\..\include\vgThreads\CriticalSection.h" />
+    <ClInclude Include="..\..\include\vgThreads\Event.h" />
+    <ClInclude Include="..\..\include\vgThreads\ManualEvent.h" />
+    <ClInclude Include="..\..\include\vgThreads\Mutex.h" />
+    <ClInclude Include="..\..\include\vgThreads\ScopedLock.h" />
+    <ClInclude Include="..\..\include\vgThreads\Semaphore.h" />
+    <ClInclude Include="..\..\include\vgThreads\ThreadPool.h" />
+    <ClInclude Include="..\..\include\vgThreads\ThreadRequest.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntry.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntryFactory.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractEntryGroup.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusAbstractGuiFactory.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefaultEntry.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefaultEntryGroup.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusDefinition.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusEntryManager.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusGuiManager.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusMenuPanel.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusOutputPanel.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusPropertiesPanel.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusPropertyItem.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusStatusPanel.h" />
+    <ClInclude Include="..\..\include\vgUserInterface\vgusTreePanel.h" />
+    <ClInclude Include="..\..\include\vgConfig\vgcXMLConfigManager.h" />
+    <ClInclude Include="..\..\include\vgLibraryDLL\vgLibraryResource.h" />
+    <ClInclude Include="..\..\include\vgLibraryDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vgConf\vgcoConfigInterface.cpp" />
+    <ClCompile Include="..\..\src\vgConf\vgcoExeConfig.cpp" />
+    <ClCompile Include="..\..\src\vgConf\vgcoExeConfigRegProxy.cpp" />
+    <ClCompile Include="..\..\src\vgConf\vgcoProjectConfig.cpp" />
+    <ClCompile Include="..\..\src\vgConf\vgcoProjectConfigRegProxy.cpp" />
+    <ClCompile Include="..\..\src\vgConf\XmlParser.cpp" />
+    <ClCompile Include="..\..\src\vgConf\XMLProfile.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\Crc32Static.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkAbstractTreeFac.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkAbstractTreeFacMgr.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkAxis.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkBox.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkBox3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCamMgrHolder.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCamMgrImpl.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkClassFactory.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkClassFactoryManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkColorVal.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCommandManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCoordSystem.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCrcUtility.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkCurrentProgram.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgKernel\vgkDissolveObject.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkDynamicLibraryUtility.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkException.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkExportManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkFlickerObject.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkGpuManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkGpuSupport.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkImagePos.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkImageRect.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkInputSystem.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersector.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersectSegment3Box3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkIntersectSegment3Triangle3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkLog.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkLogManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkMat4.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkMath.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkOpenGLSupport.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkOperation.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkPlane.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkPluginLoaderOnString.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkPluginManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkPointInPolygon.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkPropertyManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkQuat.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkRenderCommandManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererHolder.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererHolderManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkRendererManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkSegment3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkSelectManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkSerializerManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkSingleton.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkStandardOutput.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkStreamReader.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkStreamWriter.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkStringUtility.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkSystemUtility.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkTimelineManager.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkTriangle3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkUniqueID.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkVec2.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkVec3.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkWarning.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\vgkWriteUtility.cpp" />
+    <ClCompile Include="..\..\src\vgKernel\Win32InputBox.cpp" />
+    <ClCompile Include="..\..\src\vgThreads\ThreadPool.cpp" />
+    <ClCompile Include="..\..\src\vgUserInterface\vgusDefaultEntry.cpp" />
+    <ClCompile Include="..\..\src\vgUserInterface\vgusEntryManager.cpp" />
+    <ClCompile Include="..\..\src\vgUserInterface\vgusGuiManager.cpp" />
+    <ClCompile Include="..\..\src\vgUserInterface\vgusTreePanel.cpp" />
+    <ClCompile Include="..\..\src\vgConfig\vgcXMLConfigManager.cpp" />
+    <ClCompile Include="..\..\src\vgLibraryDLL\vgLibraryDLL.cpp" />
+    <ClCompile Include="..\..\src\vgStableHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\vgKernel\vgkImagePos.inl" />
+    <None Include="..\..\include\vgKernel\vgkQuat.inl" />
+    <None Include="..\..\include\vgKernel\vgkVec2.inl" />
+    <None Include="..\..\include\vgKernel\vgkVec3.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\vgLibraryDLL\vgLibraryDLL.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\VRGIS\from1297_lanshan_jingbiao_commentFunc\src\vgLibraryDLL\vgLibraryDLL.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

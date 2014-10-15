@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACAACBAB-7150-4779-AAD7-D6BE9255E16B}</ProjectGuid>
+    <RootNamespace>vgVisualPlatformDLL</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;$(SolutionDir)include\vgDeprecated;$(SolutionDir)include\vgDeprecatedMFCDLL;$(SolutionDir)include\vgDatabaseDLL;$(SolutionDir)include\vgSolarDLL;$(SolutionDir)include\vgShapeDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;VGK_DLL;VGSC_DLL;VGDEP_DLL;VGPL_DLL;VGSH_DLL;VGOC_DLL;VGSO_DLL;VGD_DLL;VGTR_DLL;VGL_DLL;VGT_DLL;VGMO_DLL;VGM_DLL;VGI_DLL;VGA_DLL;VGCA_DLL;VGF_DLL;VGVI_DLL;VGPM_DLL;VGGL_DLL;VGUI_DLL;VGG_DLL;VGSOU_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);$(SolutionDir)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependences\include;$(SolutionDir)include\$(ProjectName);$(SolutionDir)include;$(SolutionDir)..\Dependences\include\python;$(SolutionDir)include\vgDeprecated;$(SolutionDir)include\vgDeprecatedMFCDLL;$(SolutionDir)include\vgDatabaseDLL;$(SolutionDir)include\vgSolarDLL;$(SolutionDir)include\vgShapeDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;VGK_DLL;VGSC_DLL;VGDEP_DLL;VGPL_DLL;VGSH_DLL;VGOC_DLL;VGSO_DLL;VGSOU_DLL;VGD_DLL;VGTR_DLL;VGL_DLL;VGT_DLL;VGMO_DLL;VGM_DLL;VGI_DLL;VGA_DLL;VGCA_DLL;VGF_DLL;VGVI_DLL;VGPM_DLL;VGUI_DLL;VGGL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>vgStableHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;$(SolutionDir)..\Dependences\lib\$(Configuration);$(SolutionDir)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\bcgprores.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\DynamicItems.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\MainFrm.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgAutoLoadThread.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgClientRenderCommand.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWork.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWorkDoc.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWorkView.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLogonDialog.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgUserScriptOtherModules.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgUserScriptSystem.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgPropBar.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgWorkbar.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgCommonImportLibs.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgCommonStdHeaders.h" />
+    <ClInclude Include="..\..\include\vgCommon\vgStdafx.h" />
+    <ClInclude Include="..\..\src_sdk\vgVisualPlatformDLL\res.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLocalDefines.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLocalImportLibs.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\DynamicItems.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\MainFrm.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgAutoLoadThread.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWork.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWorkDoc.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWorkView.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgLogonDialog.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgUserScriptOtherModules.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgUserScriptSystem.cpp" />
+    <ClCompile Include="..\..\src\vgVisualEffectsDLL\vgPropBar.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgWorkbar.cpp" />
+    <ClCompile Include="..\..\src_sdk\vgStableHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWork.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\back.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bar_down.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bar_up.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00001.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00002.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00003.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00004.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00005.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\check.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\checked.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\fore.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\FrameWorkDoc.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\hmove.cur" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00001.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00002.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00003.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00004.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00005.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00006.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00007.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00008.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00009.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00010.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00011.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00012.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00013.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00014.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon1.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon2.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon3.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icons.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\logo.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Navi_wreckBlack.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Navi_wreckBlue.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\root.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\s_i.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Splsh16.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\tabIcon.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar1.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar2.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar256.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar256_s.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar3.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_camera.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_camera_s.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_s.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sm_include.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sr_mode.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sr_shape.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolgis.bmp" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\u_i.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\unchecked.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\vgFrameWork.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\vgFrameWorkDoc.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\VRGIS.ico" />
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Workspace.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vgGlobalDLL\vgGlobalDLL.vcxproj">
+      <Project>{9f80a1df-d245-4122-a876-477ab729f4be}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\11111111111\from1470_trunkDLL_leshan_yulao_bugfix\src_sdk\vgVisualPlatformDLL\vgFrameWork.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

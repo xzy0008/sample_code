@@ -1,0 +1,215 @@
+/*
+最新更新：
+Revision: 12
+Author: LiuSS
+Date: 10:55:23, 2009年6月2日
+Message:
+1、改正mod关键帧旋转，使平台正确渲染；
+----
+Modified : /code/plugins/Mod_r_dds.dle
+Added : /code/plugins/版本说明.txt
+Modified : /code/prj/Mod/Mod.vcproj
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/vgMod.h
+Modified : /code/src/vgObjectNode.cpp
+
+
+
+历史更新：
+
+Revision: 11
+Author: LiuSS
+Date: 21:52:13, 2009年4月16日
+Message:
+1、上传最新的插件dll，供下载，下载地址；
+https://222.195.148.153:8443/svn/ModExportor/code/plugins
+----
+Added : /code/plugins
+Added : /code/plugins/Mod_r_dds.dle
+Added : /code/plugins/Mod_r_dds.dle.manifest
+Modified : /code/prj/Mod/Mod.vcproj
+
+Revision: 10
+Author: LiuSS
+Date: 21:45:00, 2009年4月16日
+Message:
+1、输出设置调整，纹理名前缀缺省为空、恢复坐标缩放设置接口；
+----
+Modified : /code/prj/Mod/Mod.vcproj
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/ModExport.h
+Modified : /code/src/vgModelExp.aps
+Modified : /code/src/vgModelExp.rc
+Modified : /code/src/vgModelExpres.h
+Modified : /code/src/vgMtl.cpp
+Modified : /code/vgModExportor.suo
+
+Revision: 9
+Author: LiuSS
+Date: 14:38:18, 2009年4月10日
+Message:
+1、插件增设纹理名称前缀设置接口；
+----
+Modified : /code/prj/Mod/Mod.vcproj
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/ModExport.h
+Modified : /code/src/vgModelExp.aps
+Modified : /code/src/vgModelExp.rc
+Modified : /code/src/vgMtl.cpp
+Modified : /code/src/vgMtl.h
+Modified : /code/vgModExportor.sln
+Modified : /code/vgModExportor.suo
+
+Revision: 8
+Author: LiuSS
+Date: 9:58:39, 2009年4月3日
+Message:
+1、烘焙物体的类型标记去除MTL_SHELL，只用OBJ_BAKED;
+----
+Modified : /code/src/ModExport.cpp
+Modified : /code/vgModExportor.suo
+Modified : /code/vgModExportor.sln
+
+Revision: 7
+Author: LiuSS
+Date: 19:29:54, 2009年2月10日
+Message:
+1、修补一个导致mod无法被读的bug，ObjectNode的m_nVersionMod未被初始化，应由ObjectSet的Write调用ObjectNode的Write进行初始化；
+2、对关键帧支持进行功能上改进，使关键帧物体的识别更加精确，避免之前版本将普通物体错判为关键帧物体的bug；
+----
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/ModExport.h
+Modified : /code/vgModExportor.suo
+Modified : /code/src/vgObjectNode.cpp
+Modified : /code/src/vgObjectNode.h
+Modified : /code/src/vgObjectSet.cpp
+Modified : /code/vgModExportor.sln
+
+Revision: 6
+Author: LiuSS
+Date: 14:08:04, 2009年2月10日
+Message:
+1、MOD版本统一由ModExport类初始化时设置；
+2、MOD版本保留回退到先前版本的接口VERSION_MOD_LATEST;
+----
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/vgMod.h
+Modified : /code/vgModExportor.suo
+Modified : /code/src/vgObjectNode.cpp
+Modified : /code/src/vgObjectSet.cpp
+Modified : /code/src/vgObjectSet.h
+Modified : /code/vgModExportor.sln
+
+Revision: 5
+Author: LiuSS
+Date: 15:53:28, 2009年2月6日
+Message:
+1、整理过滤模型的逻辑设计，默认过滤空物体（0面或0点）及多维子材质嵌套的物体，普通物体（不含关键帧）及含关键帧的物体可以通过导出界面选择性的导出；
+----
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/ModExport.h
+Modified : /code/src/vgMod.h
+Modified : /code/src/vgModelExp.aps
+Modified : /code/src/vgModelExp.rc
+Modified : /code/src/vgModelExpres.h
+Modified : /code/vgModExportor.suo
+
+Revision: 4
+Author: LiuSS
+Date: 14:45:09, 2009年2月5日
+Message:
+1、mod文件版本改由全局宏VERSION_MOD统一控制，更新版本至VERSION_MOD(2009,1),其中mod的文件格式保持不变;
+2、物体类型由枚举类型E_OBJECT_TYPE改为一系列全局宏OBJ_BAKED、MTL_SHELL等，从而支持类型嵌套，因为枚举类型本身互斥，在唯一标识同时包含关键帧和壳材质的物体类型时逻辑混乱；
+3、该版本将mod和kfm两款插件原有的功能统一合成到mod，即mod插件同时导出普通物体和包含关键帧的物体；
+4、该版本插件的新增功能：支持关键帧和壳材质（烘焙）嵌套，即物体同时包含关键帧和壳材质；
+----
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/vgMod.h
+Modified : /code/src/vgModelExp.aps
+Modified : /code/vgModExportor.suo
+Modified : /code/prj/Kfm/Kfm.vcproj.MGIS-LIUSS.LiuSS.user
+Modified : /code/prj/Mod/Mod.vcproj.MGIS-LIUSS.LiuSS.user
+Modified : /code/src/vgObjectNode.cpp
+Modified : /code/src/vgObjectNode.h
+Modified : /code/src/vgObjectSet.cpp
+Modified : /code/src/vgObjectSet.h
+Modified : /code/vgModExportor.sln
+
+Revision: 3
+Author: LiuSS
+Date: 14:21:44, 2009年2月4日
+Message:
+1、将有关输出导出信息提示的全局函数封装成导出类的成员函数，包括AddToMsgList()、BuildMsgList()等；
+2、增设函数接口隔离模型的材质信息和地理信息，包括DumpMtlListProcess()、DumpObjListProcess()等；
+3、将主体函数ExportModel()进行整理，拆分成CollectDataForObjects()、CollectGeoDataForEachObj()等；
+4、该版本的mod、kfm格式都没有变化，只对代码进行整理，以便开发同时支持关键帧和烘焙（壳材质）的插件。
+----
+Modified : /code
+Modified : /code/src/ModExport.cpp
+Modified : /code/src/ModExport.h
+Modified : /code/src/vgMod.h
+Modified : /code/src/vgObjectSet.cpp
+Modified : /code/src/vgObjectSet.h
+Modified : /code/vgModExportor.sln
+Modified : /
+Modified : /code/src/vgMtl.h
+
+Revision: 2
+Author: LiuSS
+Date: 10:49:24, 2009年2月3日
+Message:
+1、修补bug“failed to initialize”，解决办法：在工程中加入def文件；
+2、修补bug“duplicated class_id”，解决办法：修改所有配置“/INCREMENTAL:NO” “/ZI”，并且对obj文件按工程及配置不同进行隔离；
+3、最终生成可用的各版本dll，其中包括jpg&&dds、mod&&kfm、debug&&release三种组合共8个dle文件和4个manifest文件（release版本用来突破部分机器对dll使用的限制）。
+----
+Modified : /code/vgModExportor.suo
+Modified : /code/vgModExportor.sln
+Modified : /code/prj/Kfm/Kfm.vcproj
+Modified : /code/prj/Mod/Mod.vcproj
+
+Revision: 1
+Author: LiuSS
+Date: 20:12:06, 2009年2月2日
+Message:
+1、解决方案包含2个dll工程，工程“Mod”生成普通模型导出插件，工程“Kfm”生成关键帧模型导出插件；
+2、2个插件工程共用src文件夹下的同一套代码，而它们的工程配置有所不同；
+3、插件特色：支持多维子的材质、支持uv重复的贴图、支持壳材质（烘焙）、支持关键帧动画；
+4、插件缺陷：烘焙与关键帧互斥，即一个模型不能同时赋予多维子材质及壳材质，计划在下一版本修补该缺陷。
+----
+Added : /code
+Added : /code/src
+Added : /code/src/ModExport.cpp
+Added : /code/src/ModExport.h
+Added : /code/src/vgMod.h
+Added : /code/src/vgModelExp.aps
+Added : /code/src/vgModelExp.rc
+Added : /code/src/vgModelExpres.h
+Added : /code/vgModExportor.suo
+Added : /code/prj
+Added : /code/prj/Kfm
+Added : /code/prj/Kfm/Kfm.vcproj.MGIS-LIUSS.LiuSS.user
+Added : /code/prj/Mod
+Added : /code/prj/Mod/Mod.vcproj.MGIS-LIUSS.LiuSS.user
+Added : /code/src/vgObjectNode.cpp
+Added : /code/src/vgObjectNode.h
+Added : /code/src/vgObjectSet.cpp
+Added : /code/src/vgObjectSet.h
+Added : /code/vgModExportor.sln
+Added : /code/src/vgMtl.h
+Added : /code/prj/Kfm/Kfm.vcproj
+Added : /code/prj/Mod/Mod.vcproj
+Added : /code/def
+Added : /code/def/kfm
+Added : /code/def/kfm/d_dds.def
+Added : /code/def/kfm/d_jpg.def
+Added : /code/def/kfm/r_dds.def
+Added : /code/def/kfm/r_jpg.def
+Added : /code/def/mod
+Added : /code/def/mod/d_dds.def
+Added : /code/def/mod/d_jpg.def
+Added : /code/def/mod/r_dds.def
+Added : /code/def/mod/r_jpg.def
+Added : /code/src/vgMod.cpp
+Added : /code/src/vgMtl.cpp
+
+*/

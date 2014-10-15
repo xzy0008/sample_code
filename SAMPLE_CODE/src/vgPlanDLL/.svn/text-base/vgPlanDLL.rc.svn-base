@@ -1,0 +1,281 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\vgPlanDLL.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "vgPlanDLL.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "vgPlanDLL.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_PLANIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DLG_TIMELINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 504
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_PLANIN DIALOGEX 0, 0, 173, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建方案"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,67,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,67,50,14
+    EDITTEXT        IDC_PLANNAME,56,18,99,12,ES_AUTOHSCROLL
+    LTEXT           "方案名",IDC_STATIC,17,20,24,8
+    LTEXT           "建筑区Shp",IDC_STATIC,17,42,37,8
+    GROUPBOX        "输入参数",IDC_STATIC,7,3,159,58
+    COMBOBOX        IDC_PLANCOMBO,56,39,99,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PLAN_OUTPUT DIALOGEX 0, 0, 186, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "方案输出"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,274,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,274,50,14
+    GROUPBOX        "方案选择",IDC_STATIC,7,3,172,68
+    LTEXT           "层数",IDC_STATIC,40,35,17,8
+    LTEXT           "体块数",IDC_STATIC,49,129,36,9
+    LTEXT           "容积率",IDC_STATIC,49,144,28,9
+    GROUPBOX        "方案信息",IDC_STATIC,7,75,172,89
+    EDITTEXT        IDC_OUT_FARADIO,86,142,49,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "体块长",IDC_STATIC,49,91,28,9
+    LTEXT           "体块宽",IDC_STATIC,49,105,28,9
+    EDITTEXT        IDC_OUT_BLOCKCNT,86,126,49,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_OUT_BLOCKY,86,105,49,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "方案优化",IDC_STATIC,7,168,172,48
+    CONTROL         "无",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,40,182,24,10
+    CONTROL         "随机方式",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,39,198,48,10
+    CONTROL         "矩阵方式",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,101,182,48,10
+    COMBOBOX        IDC_FLOOR,62,33,91,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "环形方式",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,101,198,48,10
+    LTEXT           "方案",IDC_STATIC,40,18,35,8
+    EDITTEXT        IDC_OUT_BLOCKX,86,89,49,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_OUT_SCHEMNAME,166,17,6,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    COMBOBOX        IDC_SCHEM_OUTCOMBO,62,16,91,76,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "输出至shp文件",IDC_EXP_SHP,40,51,114,14
+    GROUPBOX        "体块颜色",IDC_STATIC,7,220,172,49
+    LTEXT           "红色值",IDC_STATIC,24,235,28,9
+    LTEXT           "绿色值",IDC_STATIC,98,235,28,9
+    LTEXT           "蓝色值",IDC_STATIC,24,253,28,9
+    LTEXT           "透明度",IDC_STATIC,98,253,28,9
+    EDITTEXT        IDC_PLAN_COLORG,127,234,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAN_COLORALPHA,127,251,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAN_COLORR,50,234,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAN_COLORB,50,251,37,12,ES_AUTOHSCROLL
+END
+
+IDD_PLAN_BLOCKIN DIALOGEX 0, 0, 186, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动体块生成"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,36,244,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,244,50,14
+    GROUPBOX        "体块参数",IDC_STATIC,7,36,172,125
+    EDITTEXT        IDC_BLOCKX,50,47,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALIASX,132,63,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCKY,132,47,37,12,ES_AUTOHSCROLL
+    LTEXT           "体块长",IDC_STATIC,15,49,26,11
+    LTEXT           "体块宽",IDC_STATIC,96,49,26,8
+    LTEXT           "横间距",IDC_STATIC,96,65,26,8
+    LTEXT           "最高高度",IDC_STATIC,15,104,36,11
+    EDITTEXT        IDC_MAXHEIGHT,50,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALIASY,50,63,37,12,ES_AUTOHSCROLL
+    LTEXT           "纵间距",IDC_STATIC,15,65,25,11
+    LTEXT           "单层高度",IDC_STATIC,15,119,36,8
+    EDITTEXT        IDC_FLOORHEIGHT,50,117,37,12,ES_AUTOHSCROLL
+    GROUPBOX        "日照分析参数",IDC_STATIC,7,165,172,73
+    LTEXT           "年",IDC_STATIC,18,201,12,8
+    LTEXT           "月",IDC_STATIC,66,201,12,8
+    LTEXT           "日",IDC_STATIC,113,201,12,8
+    EDITTEXT        IDC_PALN_YEAR,29,199,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PALN_MONTH,76,199,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAN_DAY,125,199,30,12,ES_AUTOHSCROLL
+    LTEXT           "保证日照时间",IDC_STATIC,18,220,48,8
+    EDITTEXT        IDC_SUNTIME,76,218,30,12,ES_AUTOHSCROLL
+    LTEXT           "小时",IDC_STATIC,113,220,16,8
+    LTEXT           "最低高度",IDC_STATIC,96,104,36,11
+    EDITTEXT        IDC_MINHEIGHT,132,102,37,12,ES_AUTOHSCROLL
+    LTEXT           "区域所在纬度",IDC_STATIC,18,181,51,8
+    EDITTEXT        IDC_AREALAT,76,179,47,12,ES_AUTOHSCROLL
+    LTEXT           "旋转角度",IDC_STATIC,96,119,36,8
+    EDITTEXT        IDC_ROTATE,132,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALIASR,50,79,37,12,ES_AUTOHSCROLL
+    LTEXT           "斜间距",IDC_STATIC,15,81,25,11
+    LTEXT           "容积率",IDC_STATIC,15,141,27,11
+    EDITTEXT        IDC_FLOORAREA,50,139,37,12,ES_AUTOHSCROLL
+    GROUPBOX        "当前方案",IDC_STATIC,7,3,172,31
+    EDITTEXT        IDC_SHCEMNAME,157,16,6,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    COMBOBOX        IDC_SCHEM_SELCOMBO,30,16,124,83,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PLAN_AREAIN DIALOGEX 0, 0, 186, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加区域"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,59,50,16
+    PUSHBUTTON      "取消",IDCANCEL,97,59,50,16
+    EDITTEXT        IDC_SCHEM,64,23,100,14,ES_AUTOHSCROLL
+    LTEXT           "加入方案",IDC_STATIC,26,25,32,10
+    GROUPBOX        "参数设置",IDC_STATIC,6,6,172,73
+    LTEXT           "注意：如方案不存在将自动新建方案",IDC_STATIC,26,41,135,11
+END
+
+IDD_DLG_TIMELINE DIALOGEX 0, 0, 511, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "历史变迁"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_TIMELINE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_ENABLESELRANGE | TBS_TOOLTIPS | WS_BORDER | WS_TABSTOP,15,40,423,26,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "播放",IDC_BUTTON_PLAY,449,39,52,25
+    LTEXT           "提示：基于时间轴，可以了解某一地区的历史景观、现状和规划方案",IDC_STATIC,19,12,277,16
+    GROUPBOX        "",IDC_STATIC,15,0,422,27
+    PUSHBUTTON      "暂停/继续",IDC_BUTTON_PAUSE,449,6,52,25
+    LTEXT           "1900年",IDC_STATIC,15,31,25,9
+    LTEXT           "2100年",IDC_STATIC,414,31,25,9
+    LTEXT           "2000年",IDC_STATIC,215,30,25,9
+    LTEXT           "1950年",IDC_STATIC,114,31,25,9
+    LTEXT           "2050年",IDC_STATIC,313,31,25,9
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+// #include "res\vgPlanDLL.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

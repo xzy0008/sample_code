@@ -1,0 +1,310 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\WizardSheet.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WizardSheet.ico"
+IDI_ICON1               ICON                    "res\\icon2.ico"
+IDI_ICON2               ICON                    "res\\Globe.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WIZARDSHEET_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WizardSheet"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,263,25,50,16
+    CTEXT           "TODO: Place dialog controls here.",IDC_STATIC,10,96,300,8
+END
+
+IDD_WIZARDPAGE1 DIALOGEX 0, 0, 400, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形生成向导"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "欢迎来到VRGIS地形生成向导。本向导将帮助您完成vgtr文件的生成。\n\n\n\n\n\n单击下一步开始导入网格数据和纹理数据。",IDC_STATIC,131,25,244,86,0,WS_EX_TRANSPARENT
+    ICON            IDI_ICON2,IDC_STATIC,285,131,128,128,SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+END
+
+IDD_WIZARDPAGE2 DIALOGEX 0, 0, 400, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形生成向导"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "请导入dem数据和影像数据。注意，需要先导入dem文件后再倒入影像文件。另外，dem文件名前缀需要和影像文件名前缀一一对应。",IDC_STATIC,7,7,386,23
+    CONTROL         "",IDC_IMPORT_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,54,386,138
+    PUSHBUTTON      "导入dem",IDC_IMPORT,7,33,50,14
+    PUSHBUTTON      "清除所有",IDC_CLEAR_ALL,343,34,50,14
+    PUSHBUTTON      "导入影像",IDC_IMPORT_IMG,64,33,50,14
+END
+
+IDD_WIZARDPAGE3 DIALOGEX 0, 0, 400, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形生成向导"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "设置文件目录",IDC_STATIC,7,7,195,49
+    PUSHBUTTON      "...",IDC_BTN_SELECT_FOLDER,175,17,22,14
+    LTEXT           "临时文件路径",IDC_STATIC,15,20,49,8
+    EDITTEXT        IDC_EDIT_SELECT_FOLDER,77,17,87,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "参数选择",IDC_STATIC,7,59,195,72
+    LTEXT           "网格和影像缩放比例",IDC_STATIC,17,72,73,8
+    COMBOBOX        IDC_COMBO_SCALE_DEM_TO_IMG,139,69,53,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SELECT_OUTPUT_FOLDER,77,36,87,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SELECT_OUTPUT_FOLDER,175,36,22,14
+    LTEXT           "输出目录",IDC_STATIC,15,38,38,8
+    EDITTEXT        IDC_TERRAIN_NAME,139,89,53,14,ES_AUTOHSCROLL
+    LTEXT           "地形名称,注意,不能为空格等",IDC_STATIC,16,92,101,8
+    LTEXT           "N值",IDC_STATIC,18,114,14,8
+    COMBOBOX        IDC_COMBO_TERRAIN_N,139,112,53,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_WIZARDPAGE4 DIALOGEX 0, 0, 400, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形生成向导"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROGRESS_IMG_RESIZE,"msctls_progress32",WS_BORDER,94,83,226,9
+    PUSHBUTTON      "Start",IDC_PROCESS_START,7,38,77,36
+    CONTROL         "",IDC_PROGRESS_VGTR,"msctls_progress32",WS_BORDER,94,134,226,9
+    CONTROL         "",IDC_PROGRESS_IMG_CUT,"msctls_progress32",WS_BORDER,94,109,226,9
+    LTEXT           "点击start开始处理",IDC_PROCESS_MESSAGE,94,49,274,8
+    LTEXT           "Static",IDC__PROCESS_MSG_RESIZE,330,82,63,13
+    LTEXT           "Static",IDC__PROCESS_MSG_CUT,330,109,63,13
+    LTEXT           "Static",IDC__PROCESS_MSG_VGTR,330,135,63,13
+    CONTROL         "",IDC_PROGRESS_CLEAN,"msctls_progress32",WS_BORDER,94,159,226,9
+    LTEXT           "Static",IDC__PROCESS_MSG_CLEAN,330,160,63,13
+    LTEXT           "重新构造影像文件",IDC_STATIC,7,82,65,8
+    LTEXT           "切割影像文件",IDC_STATIC,7,111,49,8
+    LTEXT           "生成vgtr文件",IDC_STATIC,7,136,45,8
+    LTEXT           "生成vgi和清理工作",IDC_STATIC,7,159,66,8
+END
+
+IDD_WIZARDPAGE5 DIALOGEX 0, 0, 400, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形生成向导"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "操作成功完成",IDC_STATIC,7,14,49,8
+    LISTBOX         IDC_LIST1,7,31,386,161,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WizardSheet.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "WizardSheet.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WIZARDSHEET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_WIZARDPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_WIZARDPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_WIZARDPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_WIZARDPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_WIZARDPAGE5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BANNER_ICON         BITMAP                  "res\\banner_icon.bmp"
+IDB_WATERMARK           BITMAP                  "res\\watermark.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WIZARDPAGE3 DLGINIT
+BEGIN
+    IDC_COMBO_SCALE_DEM_TO_IMG, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SCALE_DEM_TO_IMG, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SCALE_DEM_TO_IMG, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_TERRAIN_N, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_TERRAIN_N, 0x403, 2, 0
+0x0037, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\WizardSheet.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1629 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\FrameWork.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DEFAULT             ICON                    "res\\ico00001.ico"
+IDR_MAINFRAME           ICON                    "res\\VRGIS.ico"
+IDR_FRAMEWTYPE          ICON                    "res\\FrameWorkDoc.ico"
+IDI_CAM1                ICON                    "res\\s_i.ico"
+IDI_CAM0                ICON                    "res\\u_i.ico"
+IDI_OBJ0                ICON                    "res\\unchecked.ico"
+IDI_SUN                 ICON                    "res\\check.ico"
+IDI_OBJ1                ICON                    "res\\checked.ico"
+IDI_ROOT                ICON                    "res\\root.ico"
+IDI_TREE0               ICON                    "res\\bar_up.ico"
+IDI_TREE1               ICON                    "res\\bar_down.ico"
+IDI_ANI0                ICON                    "res\\Navi_wreckBlack.ico"
+IDI_ANI1                ICON                    "res\\Navi_wreckBlue.ico"
+IDI_WATER1              ICON                    "res\\icon1.ico"
+IDI_WATER2              ICON                    "res\\icon2.ico"
+IDI_GLASS2              ICON                    "res\\icon3.ico"
+IDI_METAL2              ICON                    "res\\ico00002.ico"
+IDI_METAL1              ICON                    "res\\ico00003.ico"
+IDI_MIRROR2             ICON                    "res\\ico00004.ico"
+IDI_MIRROR1             ICON                    "res\\ico00005.ico"
+IDI_OBJ_BAKED2          ICON                    "res\\ico00006.ico"
+IDI_OBJ_BAKED1          ICON                    "res\\ico00007.ico"
+IDI_SKYBOX2             ICON                    "res\\ico00008.ico"
+IDI_SKYBOX1             ICON                    "res\\ico00009.ico"
+IDI_GLASS1              ICON                    "res\\ico00010.ico"
+IDI_BRIGHTFLOOR1        ICON                    "res\\ico00011.ico"
+IDI_BRIGHTFLOOR2        ICON                    "res\\ico00012.ico"
+IDI_AVINODE1            ICON                    "res\\ico00013.ico"
+IDI_AVINODE2            ICON                    "res\\ico00014.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLEDIT            BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLEDIT2           BITMAP                  "res\\bmp00002.bmp"
+IDR_TOOLTEXIAO          BITMAP                  "res\\toolbar2.bmp"
+IDR_TOOLGIS             BITMAP                  "res\\toolgis.bmp"
+IDB_SPLASH              BITMAP                  "res\\Splsh16.bmp"
+IDB_BACK                BITMAP                  "res\\fore.bmp"
+IDB_FORE                BITMAP                  "res\\back.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLEDIT TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+END
+
+IDR_TOOLEDIT2 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_SELECT
+    SEPARATOR
+    BUTTON      ID_TRANSX
+    BUTTON      ID_TRANSY
+    BUTTON      ID_TRANSZ
+    SEPARATOR
+    BUTTON      ID_ROTX
+    BUTTON      ID_ROTY
+    BUTTON      ID_ROTZ
+    SEPARATOR
+    BUTTON      ID_SCALEX
+    BUTTON      ID_SCALEY
+    BUTTON      ID_SCALEZ
+END
+
+IDR_TOOLTEXIAO TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_SE_FOUNTAIN
+    BUTTON      ID_SNOW
+    BUTTON      ID_RAIN
+END
+
+IDR_TOOLGIS TOOLBAR  16, 16
+BEGIN
+    BUTTON      IDM_Juli
+    BUTTON      IDM_Mianji
+    BUTTON      IDM_Tiji
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "打开(&Open)...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "保存(&Save)\tCtrl+Shift+S",     ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        POPUP "导入(&Import)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "导入模型(Import &Model)",         ID_IMPORT
+            MENUITEM "导入大场景(Import S&cene)",        ID_IMPORTBIGSCENE
+            MENUITEM "导入骨骼动画(Import &Animation)",   IDC_LOADANI
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "生成EXE(&Publish)",             ID_PUBLISH
+        MENUITEM SEPARATOR
+        MENUITEM "退出(E&xit)",                   ID_APP_EXIT
+        MENUITEM SEPARATOR
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "撤销(&Undo)\tCtrl+Z",           ID_UNDO
+        MENUITEM "重做(&Redo)\tCtrl+Y",           ID_REDO
+        MENUITEM SEPARATOR
+        POPUP "移动(&Translate)"
+        BEGIN
+            MENUITEM "X轴",                          ID_TRANSX
+            MENUITEM "Y轴",                          ID_TRANSY
+            MENUITEM "Z轴",                          ID_TRANSZ
+        END
+        POPUP "旋转(&Rotate)"
+        BEGIN
+            MENUITEM "X轴",                          ID_ROTX
+            MENUITEM "Y轴",                          ID_ROTY
+            MENUITEM "Z轴",                          ID_ROTZ
+        END
+        POPUP "缩放(&Scale)\t"
+        BEGIN
+            MENUITEM "X轴",                          ID_SCALEX
+            MENUITEM "Y轴",                          ID_SCALEY
+            MENUITEM "Z轴",                          ID_SCALEZ
+            MENUITEM "xyz",                         ID_SCALEXYZ
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "选择(Selec&t)\tCtrl+T",         ID_SELECT
+        MENUITEM "取消选择(&Cancel Select)\tCtrl+Shift+T", id_selectcancel
+        MENUITEM SEPARATOR
+        MENUITEM "整体移动(Translate All )",        ID_TRANSALL
+        MENUITEM SEPARATOR
+        MENUITEM "透贴调整(&Transparent Adjust)",   ID_CHANGE_RENDERTYPE
+        MENUITEM SEPARATOR
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "节点视图(&Node View)\tCtrl+N",    ID_NODEVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "属性视图(&Property View)\tCtrl+P", ID_PROVIEW
+        MENUITEM SEPARATOR
+        POPUP "画中画(&Picture In Picture)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "开启/关闭画中画(Tur&n On/Off)\tCtrl+Shift+U", ID_PIP_TURNON
+            MENUITEM "画中画设置(&Config)",              ID_PIP_CONFIG
+            MENUITEM "画中画截图(Captur&e)\tCtrl+Shift+G", ID_PIP_SAVE
+            MENUITEM SEPARATOR
+            POPUP "位置控制(C&ontrol)"
+            BEGIN
+                MENUITEM SEPARATOR
+                MENUITEM "左移\tCtrl+Shift+J",            ID_PIP_MOVE_X_SUB
+                MENUITEM "右移\tCtrl+Shift+L",            ID_PIP_MOVE_X_ADD
+                MENUITEM "上移\tCtrl+Shift+I",            ID_PIP_MOVE_Y_SUB
+                MENUITEM "下降\tCtrl+Shift+K",            ID_PIP_MOVE_Y_ADD
+                MENUITEM "宽度缩小\tCtrl+Shift+P",          ID_PIP_RESIZE_X_SUB
+                MENUITEM "宽度放大\tCtrl+Shift+O",          ID_PIP_RESIZE_X_ADD
+                MENUITEM "高度缩小\tCtrl+Shift+M",          ID_PIP_RESIZE_Y_SUB
+                MENUITEM "高度放大\tCtrl+Shift+N",          ID_PIP_RESIZE_Y_ADD
+                MENUITEM SEPARATOR
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "当前位置生成立方体贴图(&Generate Cubemap)", ID_PIP_SAVE_CUBE_MAP
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "渲染模式(Rendering &Mode)"
+        BEGIN
+            MENUITEM "实体模式(&Real)",                 ID_RENDERMODE_SHADE
+            MENUITEM "线框模式(&Wireframe)",            ID_RENDERMODE_WIREFRAME
+        END
+    END
+    POPUP "GIS分析(&G)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "阴影(&Shadow)"
+        BEGIN
+            MENUITEM "开(Shadow O&n)",               ID_ShadowON
+            MENUITEM "关(Shadow Of&f)",              id_shadowoff
+        END
+        POPUP "鹰眼(&Bird Eye)"
+        BEGIN
+            MENUITEM "设置鹰眼(&Config)",               ID_SETHAWK
+            MENUITEM "生成图像(&Generate Image)",       ID_GENHAWKIMG
+            MENUITEM "开启鹰眼(&Turn On)",              ID_HAWKEYEON
+            MENUITEM "关闭鹰眼(Turn O&ff)",             ID_HAWKEYEOFF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "坐标查询(&Query Spatial Positions)", IDM_Zuobiao
+        MENUITEM "距离测量(Measure S&patial Distances)", IDM_Juli
+        MENUITEM "面积测量(Measure &Spatial Aeras)", IDM_Mianji
+        MENUITEM "体积测量(&Measure Spatial Volumes)", IDM_Tiji
+        MENUITEM SEPARATOR
+        POPUP "地形平整"
+        BEGIN
+            MENUITEM "平整地面(&Level)...\tCtrl+L",     ID_TERRAIN_LEVELLING_BEGIN
+            MENUITEM "保存地形",                        ID_TERRAIN_SAVE
+        END
+        MENUITEM "匹配道路(Match Road)",            ID_MATCH_ROAD
+        MENUITEM SEPARATOR
+    END
+    POPUP "相机(&C)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "查看相机属性(Camera &Property)",    ID_SHOWCURCAMPRO
+        MENUITEM "创建相机(&Create Camera)",        ID_CREATCAM
+        MENUITEM "切换相机(S&witch Camera)",        ID_SWITCHCAM
+        MENUITEM "切换至物体处(Swi&tch To)\tCtrl+Alt+S", ID_POSITIONTOOBJ
+        MENUITEM SEPARATOR
+        MENUITEM "截屏(Ca&pture)\tCtrl+Shift+C",  ID_CAMERA_CAPTURE
+        MENUITEM SEPARATOR
+        POPUP "浏览模式(Viewer &Mode)"
+        BEGIN
+            MENUITEM "鼠标飞行模式(Fl&y)",                ID_CAMERA_MODE_FLY
+            MENUITEM "键盘模式(Key&board)",             ID_CAMERA_MODE_KEYBOARD
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "漫游动画(&R)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "添加新动画(&Add)",                 ID_ADDANIMATION
+        POPUP "录制动画(&Record)"
+        BEGIN
+            MENUITEM "开始(&Start)",                  ID_ANI_Start
+            MENUITEM "结束(&End)",                    ID_ANI_END
+        END
+        POPUP "播放动画(&Play)"
+        BEGIN
+            MENUITEM "开始(&Start)",                  ID_ANI_PLAY
+            MENUITEM "暂停(&Pause)",                  ID_ANI_PAUSE
+            MENUITEM "继续(&Continue)",               ID_ANI_RESUME
+            MENUITEM "停止(&Stop)",                   ID_ANI_STOP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "动画重命名(&Rename)",              ID_CAMERATRACK_RENAME
+        MENUITEM SEPARATOR
+    END
+    POPUP "特效(&T)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "喷泉(Foun&tain)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 id_fountianset
+            MENUITEM "添加(&Add)",                    ID_SE_FOUNTAIN
+        END
+        POPUP "火(Fir&e)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 ID_FIRESET
+            MENUITEM "添加(&Add)",                    ID_FIRE_ADD
+        END
+        POPUP "烟(Smo&ke)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 ID_SMOKESET
+            MENUITEM "添加(&Add)",                    ID_SE_SMOKE
+        END
+        POPUP "旗帜(Fl&ag)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 ID_SETFLAG
+            MENUITEM "添加(&Add)",                    ID_ADDFLAG
+        END
+        POPUP "雨(&Rain)"
+        BEGIN
+            MENUITEM "开(&On)",                      ID_RAIN
+            MENUITEM "关(O&ff)",                     ID_RAIN_DEL
+        END
+        POPUP "雪(Sno&w)"
+        BEGIN
+            MENUITEM "开(&On)",                      ID_SNOW
+            MENUITEM "关(O&ff)",                     ID_SNOW_DEL
+        END
+        POPUP "雾(&Fog)"
+        BEGIN
+            MENUITEM "开(&On)",                      ID_SE_FOG
+            MENUITEM "关(O&ff)",                     ID_SE_FOG_DEL
+        END
+        MENUITEM SEPARATOR
+        POPUP "水面生成(&Water)"
+        BEGIN
+            MENUITEM "转换物体为水面(Conver&t)",           ID_WATER_CONVERT
+            MENUITEM "设置(Con&fig)",                 ID_WATER_EDIT
+        END
+        POPUP "玻璃生成(&Glass)"
+        BEGIN
+            MENUITEM "转换物体为玻璃(Conver&t)",           ID_GLASS_CONVERT
+            MENUITEM "设置(Con&fig)",                 ID_GLASS_EDIT
+        END
+        POPUP "镜子生成(&Mirror)"
+        BEGIN
+            MENUITEM "转换物体为镜子(Conver&t)",           ID_MIRROR_CONVERT
+            MENUITEM "设置(Con&fig)",                 ID_MIRROR_EDIT
+        END
+        POPUP "金属生成(M&etal)"
+        BEGIN
+            MENUITEM "转换物体为金属(Conver&t)",           ID_METAL_CONVERT
+            MENUITEM "设置(Con&fig)",                 ID_METAL_EDIT
+        END
+        POPUP "光亮地面生成(&Floor)"
+        BEGIN
+            MENUITEM "转换选中物体(Conver&t)",            ID_CONVERT_BRIGTHFLOOR
+            MENUITEM "设置(Con&fig)",                 ID_BRIGHTFLOOR_EDIT
+        END
+        POPUP "动态纹理生成(&Dyntexture)"
+        BEGIN
+            MENUITEM "转换选中物体(Conver&t)",            ID_AVI_NODE_CONVERT
+            MENUITEM "设置(Con&fig)",                 ID_AVINODE_EDIT
+        END
+        MENUITEM SEPARATOR
+        POPUP "天空球生成(&Skybox)"
+        BEGIN
+            MENUITEM "转换物体为天空球(Conver&t)",          ID_SKYBOX_CONVERT
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "植被(&P)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "设置(&Config)",                 ID_SETTREE
+        MENUITEM SEPARATOR
+        MENUITEM "开始植树(&Start Planting)",       ID_BEGINPLANT
+        MENUITEM "沿线植树(Planting in &Lines)",    ID_PLANTINLINE
+        MENUITEM SEPARATOR
+        MENUITEM "优化植被(Optimize Planting)",     ID_OptPlant
+        MENUITEM SEPARATOR
+    END
+    POPUP "地形(&T)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "单块地形(&Single-Terrain)"
+        BEGIN
+            MENUITEM "DEM文件(&Dem)",                 ID_DEM
+            MENUITEM "影象文件(&Image)",                ID_DOM
+            MENUITEM "生成地形(Generat&e)",             ID_GENTERRAIN
+        END
+        POPUP "拼合地形(&Multi-Terrain)"
+        BEGIN
+            MENUITEM "载入地形(&Load)",                 id_loadbigterrain
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "水淹分析(S&ubmerge)",             ID_Shuiyan
+        MENUITEM "水库体积(Measure &Water Volume)", IDM_SHUiTiTIJI
+        MENUITEM "土方测量(Measure Mou&ntain)",     IDM_Shantitiji
+        MENUITEM "断面查询(Q&uery Transect)",       IDM_Hjm
+        MENUITEM "等高线图(Generate C&ontour Map)", IDM_Dgx
+        MENUITEM "通透判定(Tran&sparence)",         IDM_Tongtoupanding
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "开启地形渲染",                      ID_TERRAIN_RENDER_ON
+        MENUITEM "关闭地形渲染",                      ID_TERRAIN_RENDER_OFF
+        MENUITEM "卸载地形数据",                      ID_TERRAIN_DROP_DATA
+        MENUITEM "转换DEM文件为vgtr文件",              ID_TERRAIN_CONVER_DEMS_TO_VGTR
+        MENUITEM "转换vgtr文件为bmp图像",              ID_TERRAIN_CONVERT_VGTR_TO_BMP
+    END
+    POPUP "三通道(&C)"
+    BEGIN
+        POPUP "发送端(&Sender)"
+        BEGIN
+            MENUITEM "开始发送(&Send)",                 ID_CONTROL_PC
+            MENUITEM "停止发送(St&op)",                 ID_CLOSE_SED
+        END
+        POPUP "接收端(&Receiver)"
+        BEGIN
+            MENUITEM "开始接收(&Begin)",                ID_CONTROLED_PC
+            MENUITEM "+1",                          ID_P1
+            MENUITEM "-1",                          ID_M1
+            MENUITEM "停止接收(&Stop)",                 ID_CLOSE_REV
+        END
+        POPUP "边缘融合(&Edge-blending)"
+        BEGIN
+            MENUITEM "软件融合(&Software)",             ID_SOFTEDGE
+            MENUITEM "硬件融合(&Hardware)",             ID_HARDEDGE
+        END
+        MENUITEM "视景体设置(&View Frustum Config)", ID_VS
+    END
+    POPUP "数据库(&D)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "查看属性(&Property)"
+        BEGIN
+            MENUITEM "连接(&Connect)",                ID_DB_LINK
+            MENUITEM "查看(In&sight)",                ID_DB_SHOW
+        END
+        POPUP "新建对象(New &Object)"
+        BEGIN
+            MENUITEM "数据库(&Database)",              ID_DB_DATABASE
+            MENUITEM "表(&Table)",                   ID_DB_TABLE
+            MENUITEM "记录(&Record)",                 ID_DB_RECORD
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "声音(&S)"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "立体音效(S&tereo Sound)"
+        BEGIN
+            MENUITEM "设置(&Config)",                 ID_SOUNDSET
+            MENUITEM "开(&On)",                      ID_OPENALON
+            MENUITEM "关(O&ff)",                     ID_OPENALOFF
+        END
+        POPUP "背景音效(&Background Sound)"
+        BEGIN
+            MENUITEM "开(&On)",                      ID_MUSICON
+            MENUITEM "关(O&ff)",                     ID_MUSICOFF
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "关于VR-GIS(&A)...",             ID_APP_ABOUT
+        MENUITEM SEPARATOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_CAMERA_CAPTURE,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    "N",            ID_NODEVIEW,            VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_PIP_MOVE_X_ADD,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "J",            ID_PIP_MOVE_X_SUB,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "K",            ID_PIP_MOVE_Y_ADD,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "I",            ID_PIP_MOVE_Y_SUB,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "P",            ID_PIP_RESIZE_X_ADD,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "O",            ID_PIP_RESIZE_X_SUB,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "M",            ID_PIP_RESIZE_Y_ADD,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "N",            ID_PIP_RESIZE_Y_SUB,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "G",            ID_PIP_SAVE,            VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "Y",            ID_PIP_TURNOFF,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "U",            ID_PIP_TURNON,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "S",            ID_POSITIONTOOBJ,       VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "P",            ID_PROVIEW,             VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_REDO,                VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_SELECT,              VIRTKEY, CONTROL, NOINVERT
+    "T",            id_selectcancel,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "Z",            ID_UNDO,                VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_TERRAIN_LEVELLING_BEGIN, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VR-GIS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VR-GIS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TREESETTING DIALOG  0, 0, 111, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TreeSetting"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,83,36,9
+    PUSHBUTTON      "Cancel",IDCANCEL,61,83,36,9
+    EDITTEXT        IDC_HEIGHT,61,32,40,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH,61,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "纹理：",IDC_TEXTUREstatic,24,15,25,8
+    PUSHBUTTON      "....",IDC_TEXUTRE,61,11,18,12
+    LTEXT           "高度：",IDC_STATIC,24,36,25,8
+    LTEXT           "宽度：",IDC_STATIC,24,60,25,8
+END
+
+IDD_TREEDIS DIALOG  0, 0, 102, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "树间间距"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,38,31,9
+    PUSHBUTTON      "Cancel",IDCANCEL,55,38,32,9
+    EDITTEXT        IDC_EDIT1,14,13,68,12,ES_AUTOHSCROLL
+END
+
+IDD_FOUNTAIN DIALOG  0, 0, 121, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FOUNTAIN SETTING"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,89,39,9
+    PUSHBUTTON      "Cancel",IDCANCEL,73,90,39,9
+    LTEXT           "高度:",IDC_STATIC,24,17,39,9
+    EDITTEXT        IDC_MAXHEIGHT,63,15,34,12,ES_AUTOHSCROLL
+    LTEXT           "宽度:",IDC_STATIC,24,36,39,9
+    EDITTEXT        IDC_MAXWIDTH,63,34,34,12,ES_AUTOHSCROLL
+    LTEXT           "速度:",IDC_STATIC,24,55,39,9
+    EDITTEXT        IDC_MAXSPEED,63,53,34,12,ES_AUTOHSCROLL
+    LTEXT           "粒子数:",IDC_STATIC,24,74,39,9
+    EDITTEXT        IDC_FOUNTAIN_COUNT,63,72,34,12,ES_AUTOHSCROLL
+END
+
+IDD_DEM DIALOG  0, 0, 108, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DemReader"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,53,36,10
+    PUSHBUTTON      "Cancel",IDCANCEL,63,53,36,10
+    PUSHBUTTON      "...",IDC_BUTTON1,70,13,21,11
+    LTEXT           "DEM文件：",IDC_STATIC,15,14,41,8
+    PUSHBUTTON      "...",IDC_BUTTON2,70,32,21,11
+    LTEXT           "影像文件：",IDC_STATIC,15,33,41,8
+END
+
+IDD_GIS_DG DIALOG  0, 0, 270, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等高线图"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_DRAW,"Static",SS_BLACKFRAME,7,7,256,185
+END
+
+IDD_FILECOLORTMP_DIALOG DIALOG  0, 0, 187, 96
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "Static",IDC_STATIC_PREVIEW,7,7,173,82
+    LTEXT           "Static",IDC_STATIC,65,78,55,11
+END
+
+IDD_Fire DIALOG  0, 0, 121, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FIRE SETTING"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,89,39,9
+    PUSHBUTTON      "Cancel",IDCANCEL,73,90,39,9
+    LTEXT           "高度:",IDC_STATIC,24,17,39,9
+    EDITTEXT        IDC_MAXHEIGHT,63,15,34,12,ES_AUTOHSCROLL
+    LTEXT           "宽度:",IDC_STATIC,24,36,39,9
+    EDITTEXT        IDC_MAXWIDTH,63,34,34,12,ES_AUTOHSCROLL
+    LTEXT           "速度:",IDC_STATIC,24,55,39,9
+    EDITTEXT        IDC_MAXSPEED,63,53,34,12,ES_AUTOHSCROLL
+    LTEXT           "粒子数:",IDC_STATIC,24,74,39,9
+    EDITTEXT        IDC_FOUNTAIN_COUNT,63,72,34,12,ES_AUTOHSCROLL
+END
+
+IDD_SMOKESET DIALOG  0, 0, 121, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SMOKE SETTING"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,89,39,9
+    PUSHBUTTON      "Cancel",IDCANCEL,73,90,39,9
+    LTEXT           "高度:",IDC_STATIC,24,17,39,9
+    EDITTEXT        IDC_MAXHEIGHT,63,15,34,12,ES_AUTOHSCROLL
+    LTEXT           "宽度:",IDC_STATIC,24,36,39,9
+    EDITTEXT        IDC_MAXWIDTH,63,34,34,12,ES_AUTOHSCROLL
+    LTEXT           "速度:",IDC_STATIC,24,55,39,9
+    EDITTEXT        IDC_MAXSPEED,63,53,34,12,ES_AUTOHSCROLL
+    LTEXT           "粒子数:",IDC_STATIC,24,74,39,9
+    EDITTEXT        IDC_FOUNTAIN_COUNT,63,72,34,12,ES_AUTOHSCROLL
+END
+
+IDD_DLG_FILEOPENING DIALOG  0, 0, 251, 88
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库文件打开对话框"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "测试数据库",IDOK,116,61,50,14
+    PUSHBUTTON      "取消",IDCANCEL,171,61,50,14
+    LTEXT           "为文件指定完整路径:",IDC_STATIC,14,14,93,14
+    EDITTEXT        IDC_EDIT2,13,37,154,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "路径为...",IDC_BTN_FILEPATH,180,35,42,16
+END
+
+IDD_BULDINGINF1 DIALOGEX 0, 0, 186, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "楼房信息"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,8,221,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,221,50,14
+    LTEXT           "",IDC_STATIC1,17,17,41,15
+    EDITTEXT        IDC_EDIT_ID,66,14,82,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC2,17,43,41,15
+    EDITTEXT        IDC_EDIT_NAME,66,41,82,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC3,17,70,41,15
+    EDITTEXT        IDC_EDIT_DATA,66,66,82,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC4,17,95,41,15
+    EDITTEXT        IDC_EDIT_LENGTH,66,92,82,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC5,17,121,41,15
+    EDITTEXT        IDC_EDIT_WIDTH,66,118,82,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC6,17,147,41,15
+    EDITTEXT        IDC_EDIT_HEIGHT,66,145,82,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "播放Flash",IDC_BUTTON2,51,180,40,17
+    PUSHBUTTON      "浏览图片",IDC_BUTTON4,99,180,40,17
+    PUSHBUTTON      "...",IDC_BUTTON5,148,16,27,14
+    PUSHBUTTON      "...",IDC_BUTTON6,148,43,27,14
+    PUSHBUTTON      "...",IDC_BUTTON7,148,67,27,14
+    PUSHBUTTON      "...",IDC_BUTTON8,148,94,27,14
+    PUSHBUTTON      "...",IDC_BUTTON9,148,120,27,14
+    PUSHBUTTON      "...",IDC_BUTTON10,148,146,27,14
+END
+
+IDD_FLAG DIALOG  0, 0, 121, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FLAG_SETTING"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,89,39,9
+    PUSHBUTTON      "Cancel",IDCANCEL,73,90,39,9
+    LTEXT           "高度:",-1,24,21,39,9
+    EDITTEXT        IDC_MAXHEIGHT,63,19,34,12,ES_AUTOHSCROLL
+    LTEXT           "宽度:",-1,24,40,39,9
+    EDITTEXT        IDC_MAXWIDTH,63,38,34,12,ES_AUTOHSCROLL
+    LTEXT           "速度:",-1,24,59,39,9
+    EDITTEXT        IDC_MAXSPEED,63,57,34,12,ES_AUTOHSCROLL
+END
+
+IDD_DLG_FILEOPENED DIALOG  0, 0, 263, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库文件已打开,您可以选择并打开其中的对象"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "设计",ID_TABLESET_OPEN,181,116,32,14
+    EDITTEXT        IDC_EDT_TABLENAME,17,17,59,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "打开",IDC_BTN_TABLEOPEN,130,116,32,14,BS_FLAT
+    GROUPBOX        "对象",IDC_STATIC,17,43,66,87
+    PUSHBUTTON      "表",IDC_BTN_TABLELIST,17,68,65,15
+    LISTBOX         IDC_LST_TABLELIST,109,17,124,89,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DB_TABLENEW DIALOG  0, 0, 235, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建表"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,87,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,30,50,14
+    LTEXT           "请输入新表的名字:",IDC_STATIC,10,10,69,14
+    EDITTEXT        IDC_EDIT_TABLENEW,87,10,131,14,ES_AUTOHSCROLL
+END
+
+IDD_WATERDIG DIALOGEX 0, 0, 215, 293
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "水面参数设置面板"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,269,50,14
+    PUSHBUTTON      "取消",IDCANCEL,120,269,50,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV1,167,79,21,14
+    LTEXT           "凹凸贴图",IDC_WATER_BUMP_S,16,196,37,15
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV2,167,98,21,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV3,167,117,21,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV4,167,135,21,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV5,167,152,21,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV6,167,170,21,14
+    PUSHBUTTON      "...",IDC_WATER_DECAL_BTN,175,211,21,14
+    LTEXT           "水面凹凸参数:(推荐参数0.6)",IDC_WATER_SCALE_S,15,246,110,14
+    EDITTEXT        IDC_WATER_EDIT2,62,212,107,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_WATER_BUMP_BTN,175,193,21,14
+    EDITTEXT        IDC_WATER_EDIT3,62,194,107,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "水纹理贴图",IDC_WATER_DECAL_S,16,212,44,13
+    EDITTEXT        IDC_WATER_ENV1,54,80,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV2,54,98,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV3,54,116,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV4,54,134,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV5,54,152,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV6,54,170,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_BUMP_SCALE,130,244,67,13,ES_AUTOHSCROLL
+    LTEXT           "右视图",IDC_CUBE_STATIC1,21,81,28,11
+    LTEXT           "左视图",IDC_CUBE_STATIC2,21,99,28,11
+    LTEXT           "下视图",IDC_CUBE_STATIC3,21,117,28,11
+    LTEXT           "上视图",IDC_CUBE_STATIC4,21,135,28,11
+    LTEXT           "后视图",IDC_CUBE_STATIC5,21,153,28,11
+    LTEXT           "前视图",IDC_CUBE_STATIC6,21,171,28,11
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,33,201,196
+    GROUPBOX        "参数设置",IDC_WATER_QUAN3,7,232,201,31
+    GROUPBOX        "立方体贴图设定",IDC_WATER_QUAN22,14,69,184,120
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,15,8,154,15
+    CONTROL         "立方体贴图自动生成",IDC_CHECK_FOR_CUBE_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,141,13
+END
+
+IDD_DLG_TABLESET DIALOG  0, 0, 224, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "表结构设计"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,88,135,36,14
+    PUSHBUTTON      "取消",IDCANCEL,136,135,36,14
+    GROUPBOX        "字段属性",IDC_STATIC,23,22,99,89
+    LISTBOX         IDC_LST_FIELDLIST,136,50,72,73,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_BTN_FIELDDEL,177,28,29,14,BS_FLAT
+    LTEXT           "字段名:",IDC_STATIC,29,42,37,8
+    LTEXT           "数据类型:",IDC_STATIC,29,57,37,8
+    LTEXT           "允许为空:",IDC_STATIC,29,74,37,8
+    LTEXT           "数据宽度:",IDC_STATIC,29,89,37,8
+    COMBOBOX        IDC_CMB_FIELDTYPE,68,55,48,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_FIELDNULL,68,72,48,67,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_BYTENUM,68,87,48,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_FIELDCREATE,68,40,48,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "添加",IDC_BTN_FIELDADD,135,28,29,14,BS_FLAT
+END
+
+IDD_SMALLMAP DIALOG  0, 0, 118, 112
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HawkEyeSet"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,13,87,37,11
+    PUSHBUTTON      "Cancel",IDCANCEL,66,86,34,11
+    EDITTEXT        IDC_EDIT1,71,20,40,12,ES_AUTOHSCROLL
+    LTEXT           "鹰眼宽度：",IDC_STATIC,17,23,41,8
+    EDITTEXT        IDC_EDIT3,71,39,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,71,57,40,12,ES_AUTOHSCROLL
+    LTEXT           "透明度：",IDC_STATIC,25,40,33,8
+    LTEXT           "采样间距：",IDC_STATIC,17,58,41,8
+END
+
+IDD_DLG_OPENALSET DIALOGEX 0, 0, 138, 187
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "立体音效"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,159,41,9
+    PUSHBUTTON      "Cancel",IDCANCEL,76,159,40,9
+    GROUPBOX        "声源坐标",IDC_STATIC,17,7,100,69
+    GROUPBOX        "其他设置",IDC_STATIC,17,83,100,63
+    EDITTEXT        IDC_EDIT1,66,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,66,40,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,66,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,67,123,40,14,ES_AUTOHSCROLL
+    LTEXT           "X：",IDC_STATIC,33,24,12,8
+    LTEXT           "Y：",IDC_STATIC,33,44,12,8
+    LTEXT           "Z：",IDC_STATIC,33,63,12,8
+    LTEXT           "源文件：",IDC_STATIC,28,101,31,8
+    LTEXT           "衰减系数：",IDC_STATIC,27,126,38,8
+    PUSHBUTTON      "...",IDC_WAVPATH,71,97,26,12
+END
+
+IDD_GLASSDLG DIALOGEX 0, 0, 215, 239
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "玻璃参数设置面板"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,214,50,13
+    PUSHBUTTON      "取消",IDCANCEL,120,214,50,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV1,167,75,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV2,167,92,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV3,167,110,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV4,167,126,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV5,167,142,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV6,167,158,21,13
+    LTEXT           "亮度设置:(推荐参数0.1)",IDC_WATER_SCALE_S,15,193,110,13
+    EDITTEXT        IDC_WATER_ENV1,54,75,107,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    EDITTEXT        IDC_WATER_ENV2,54,92,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV3,54,109,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV4,54,125,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV5,54,142,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV6,54,158,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_BUMP_SCALE,130,192,67,12,ES_AUTOHSCROLL
+    LTEXT           "右视图",IDC_CUBE_STATIC1,21,77,28,10
+    LTEXT           "左视图",IDC_CUBE_STATIC2,21,93,28,10
+    LTEXT           "下视图",IDC_CUBE_STATIC3,21,110,28,10
+    LTEXT           "上视图",IDC_CUBE_STATIC4,21,126,28,10
+    LTEXT           "后视图",IDC_CUBE_STATIC5,21,143,28,10
+    LTEXT           "前视图",IDC_CUBE_STATIC6,21,160,28,10
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,34,201,145
+    GROUPBOX        "参数设置",IDC_WATER_QUAN3,7,180,201,29
+    GROUPBOX        "立方体贴图设定",IDC_WATER_QUAN22,14,65,184,111
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,15,7,154,14
+    CONTROL         "立方体贴图自动生成",IDC_CHECK_FOR_CUBE_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,48,141,12
+END
+
+IDD_MIRRORDLG DIALOGEX 0, 0, 214, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "镜子参数设置面板"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,183,50,13
+    PUSHBUTTON      "取消",IDCANCEL,120,183,50,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV1,167,75,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV2,167,92,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV3,167,110,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV4,167,126,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV5,167,142,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV6,167,158,21,13
+    EDITTEXT        IDC_WATER_ENV1,54,75,107,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    EDITTEXT        IDC_WATER_ENV2,54,92,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV3,54,109,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV4,54,125,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV5,54,142,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV6,54,158,107,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "右视图",IDC_CUBE_STATIC1,21,77,28,10
+    LTEXT           "左视图",IDC_CUBE_STATIC2,21,93,28,10
+    LTEXT           "下视图",IDC_CUBE_STATIC3,21,110,28,10
+    LTEXT           "上视图",IDC_CUBE_STATIC4,21,126,28,10
+    LTEXT           "后视图",IDC_CUBE_STATIC5,21,143,28,10
+    LTEXT           "前视图",IDC_CUBE_STATIC6,21,160,28,10
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,34,197,145
+    GROUPBOX        "立方体贴图设定",IDC_WATER_QUAN22,14,65,184,111
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,15,7,154,14
+    CONTROL         "立方体贴图自动生成",IDC_CHECK_FOR_CUBE_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,47,141,12
+END
+
+IDD_METALDLG DIALOGEX 0, 0, 215, 245
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "金属参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,224,50,13
+    PUSHBUTTON      "取消",IDCANCEL,120,224,50,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV1,167,66,21,13
+    LTEXT           "凹凸贴图",IDC_WATER_BUMP_S,16,170,37,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV2,167,83,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV3,167,101,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV4,167,117,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV5,167,133,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV6,167,149,21,13
+    LTEXT           "凹凸参数:(推荐参数0.6)",IDC_WATER_SCALE_S,15,203,110,13
+    PUSHBUTTON      "...",IDC_WATER_BUMP_BTN,175,168,21,13
+    EDITTEXT        IDC_WATER_EDIT3,62,169,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV1,54,66,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV2,54,83,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV3,54,100,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV4,54,116,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV5,54,133,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV6,54,149,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_BUMP_SCALE,130,202,67,12,ES_AUTOHSCROLL
+    LTEXT           "右视图",IDC_CUBE_STATIC1,21,68,28,10
+    LTEXT           "左视图",IDC_CUBE_STATIC2,21,84,28,10
+    LTEXT           "下视图",IDC_CUBE_STATIC3,21,101,28,10
+    LTEXT           "上视图",IDC_CUBE_STATIC4,21,117,28,10
+    LTEXT           "后视图",IDC_CUBE_STATIC5,21,134,28,10
+    LTEXT           "前视图",IDC_CUBE_STATIC6,21,151,28,10
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,25,201,161
+    GROUPBOX        "参数设置",IDC_WATER_QUAN3,7,190,201,29
+    GROUPBOX        "立方体贴图设定",IDC_WATER_QUAN22,14,56,184,111
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,15,7,154,14
+    CONTROL         "立方体贴图自动生成",IDC_CHECK_FOR_CUBE_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,39,141,12
+END
+
+IDD_TEST_MULTISAMPLE DIALOGEX 0, 0, 343, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,286,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,286,24,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,7,7,270,254
+END
+
+IDD_PIP_CONFIG DIALOGEX 0, 0, 151, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "画中画设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,22,201,46,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,201,47,14
+    LTEXT           "x",IDC_STATIC,10,22,14,15,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT1,30,19,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,90,19,40,14,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,74,21,10,15,0,WS_EX_RIGHT
+    GROUPBOX        "起始位置及大小设置",IDC_STATIC,7,7,137,58
+    GROUPBOX        "FBO缓冲区参数设置",IDC_STATIC,7,68,137,127
+    EDITTEXT        IDC_EDIT3,30,134,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,90,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "长",IDC_STATIC,15,137,9,8,0,WS_EX_RIGHT
+    LTEXT           "宽",IDC_STATIC,75,137,9,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT5,30,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,90,45,40,14,ES_AUTOHSCROLL
+    LTEXT           "长",IDC_STATIC,15,47,9,8,0,WS_EX_RIGHT
+    LTEXT           "宽",IDC_STATIC,75,47,9,8,0,WS_EX_RIGHT
+    LTEXT           "提示：\n1.生成立方体贴图时缓冲区长宽需满足长宽一致且为2的n次方长度。建议：长256宽256。\n2.缓冲区的长宽即为画中画截屏后的大小。",IDC_STATIC,17,80,120,51
+    LTEXT           "提示：\n打开调试模式后，画中画只渲染主场景裁剪后物体。",IDC_STATIC,15,151,119,25
+    CONTROL         "开启调试模式",IDC_PIP_CHECKMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,180,118,10
+END
+
+IDD_VS DIALOGEX 0, 0, 123, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "视景体设置"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,2,87,50,12
+    PUSHBUTTON      "取消",IDCANCEL,66,87,50,12
+    EDITTEXT        IDC_NEAR,43,9,65,12,ES_AUTOHSCROLL
+    LTEXT           "近裁剪面",IDC_STATIC,9,12,28,8
+    EDITTEXT        IDC_FAR,43,26,65,12,ES_AUTOHSCROLL
+    LTEXT           "远裁剪面",IDC_STATIC,9,29,28,8
+    EDITTEXT        IDC_FOV,43,46,65,12,ES_AUTOHSCROLL
+    LTEXT           "视野张角",IDC_STATIC,9,47,28,8
+    EDITTEXT        IDC_ASPECT,43,66,65,12,ES_AUTOHSCROLL
+    LTEXT           "长宽比例",IDC_STATIC,9,66,28,8
+    GROUPBOX        "参数设置",IDC_STATIC,3,2,113,79
+END
+
+IDD_BRIGHTFLOOR_DLG DIALOGEX 0, 0, 216, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "光亮地板设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,39,229,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,229,50,14
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV1,167,73,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV2,167,90,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV3,167,108,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV4,167,125,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV5,167,140,21,13
+    PUSHBUTTON      "...",IDC_WATER_BUTTON_ENV6,167,157,21,13
+    PUSHBUTTON      "...",IDC_WATER_DECAL_BTN,175,178,21,13
+    LTEXT           "亮度参数:(推荐参数0.3)",IDC_WATER_SCALE_S,15,211,110,13
+    EDITTEXT        IDC_WATER_EDIT2,62,179,107,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "贴图",IDC_WATER_DECAL_S,16,179,44,12
+    EDITTEXT        IDC_WATER_ENV1,54,74,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV2,54,90,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV3,54,107,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV4,54,124,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV5,54,140,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_ENV6,54,157,107,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WATER_BUMP_SCALE,130,209,67,12,ES_AUTOHSCROLL
+    LTEXT           "右视图",IDC_CUBE_STATIC1,21,75,28,10
+    LTEXT           "左视图",IDC_CUBE_STATIC2,21,92,28,10
+    LTEXT           "下视图",IDC_CUBE_STATIC3,21,108,28,10
+    LTEXT           "上视图",IDC_CUBE_STATIC4,21,125,28,10
+    LTEXT           "后视图",IDC_CUBE_STATIC5,21,142,28,10
+    LTEXT           "前视图",IDC_CUBE_STATIC6,21,158,28,10
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,37,202,158
+    GROUPBOX        "参数设置",IDC_WATER_QUAN3,7,198,201,29
+    GROUPBOX        "立方体贴图设定",IDC_WATER_QUAN22,14,64,184,111
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,15,7,154,14
+    CONTROL         "立方体贴图自动生成",IDC_CHECK_FOR_CUBE_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,46,141,12
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 302, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ｆｌａｓｈ"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,226,182,50,14
+    CONTROL         "",IDC_SHOCKWAVEFLASH2,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,6,7,289,161
+    PUSHBUTTON      "播放",IDC_BUTTON2,17,182,50,14
+    PUSHBUTTON      "停止",IDC_BUTTON3,77,182,50,14
+    PUSHBUTTON      "打开新Flash",IDC_BUTTON4,137,182,50,14
+END
+
+IDD_AVI_DLG DIALOGEX 0, 0, 216, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AVI 设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,39,91,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,91,50,14
+    PUSHBUTTON      "...",IDC_WATER_DECAL_BTN,175,59,21,13
+    EDITTEXT        IDC_WATER_EDIT2,62,60,107,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "avi路径",IDC_WATER_DECAL_S,16,60,44,12
+    LTEXT           "Static",IDC_WATER_DLG_TEXT,18,9,154,14
+    GROUPBOX        "纹理数据设置",IDC_WATER_QUAN2,7,47,202,36
+END
+
+IDD_CAMERATRACK_RENAME DIALOGEX 0, 0, 197, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,39,50,14
+    LTEXT           "Static",IDC_STATIC,7,7,19,8
+    EDITTEXT        IDC_EDIT1,50,7,131,18,ES_AUTOHSCROLL
+END
+
+IDD_TERRAIN_LEVELLING DIALOGEX 0, 0, 131, 53
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置地形平整后的高度值"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,32,50,14
+    PUSHBUTTON      "取消",IDCANCEL,74,32,50,14
+    RTEXT           "高度",IDC_STATIC,7,11,32,12
+    EDITTEXT        IDC_EDIT1,46,8,65,16,ES_AUTOHSCROLL
+END
+
+IDD_GISMATCH DIALOGEX 0, 0, 173, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VG_MATCH"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,164,50,10
+    PUSHBUTTON      "取消",IDCANCEL,100,164,50,11
+    EDITTEXT        IDC_EDIT1,93,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,93,72,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,93,99,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,93,126,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ".....",IDC_BUTTON1,93,20,40,10
+    LTEXT           "道路纹理：",IDC_STATIC,36,21,41,8
+    LTEXT           "路丫宽度：",IDC_STATIC,36,48,41,8
+    LTEXT           "道路宽度：",IDC_STATIC,35,74,41,8
+    LTEXT           "离地面高度：",IDC_STATIC,27,129,49,8
+    LTEXT           "纹理密度：",IDC_STATIC,35,104,41,8
+END
+
+IDD_TRANSALL DIALOGEX 0, 0, 169, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TransAll"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,19,112,50,10
+    PUSHBUTTON      "取消",IDCANCEL,104,112,50,10
+    EDITTEXT        IDC_TRANSX,76,24,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANSY,76,53,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANSZ,76,81,40,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,43,28,8,8
+    LTEXT           "Y:",IDC_STATIC,42,57,8,8
+    LTEXT           "Z:",IDC_STATIC,43,84,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "FrameWork Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FrameWork"
+            VALUE "LegalCopyright", "版权所有 (C) 2007"
+            VALUE "OriginalFilename", "FrameWork.EXE"
+            VALUE "ProductName", "FrameWork 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TREESETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        VERTGUIDE, 23
+        VERTGUIDE, 46
+        VERTGUIDE, 61
+        VERTGUIDE, 67
+        VERTGUIDE, 88
+        VERTGUIDE, 101
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 96
+        HORZGUIDE, 23
+        HORZGUIDE, 32
+        HORZGUIDE, 56
+        HORZGUIDE, 59
+        HORZGUIDE, 81
+    END
+
+    IDD_TREEDIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 95
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+        HORZGUIDE, 38
+    END
+
+    IDD_FOUNTAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_GIS_DG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_FILECOLORTMP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_Fire, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_SMOKESET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DLG_FILEOPENING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_BULDINGINF1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_FLAG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DLG_FILEOPENED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DB_TABLENEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_WATERDIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_DLG_TABLESET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_SMALLMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_DLG_OPENALSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_GLASSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_MIRRORDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_METALDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_TEST_MULTISAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_PIP_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_VS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 116
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_BRIGHTFLOOR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_AVI_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_CAMERATRACK_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_TERRAIN_LEVELLING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_GISMATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        VERTGUIDE, 93
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_TRANSALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_TABLESET DLGINIT
+BEGIN
+    IDC_CMB_FIELDTYPE, 0x403, 5, 0
+0xc4ce, 0xbeb1, "\000" 
+    IDC_CMB_FIELDTYPE, 0x403, 5, 0
+0xfbd5, 0xfdca, "\000" 
+    IDC_CMB_FIELDTYPE, 0x403, 5, 0
+0xa1d0, 0xfdca, "\000" 
+    IDC_CMB_FIELDTYPE, 0x403, 5, 0
+0xd5c8, 0xdac6, "\000" 
+    IDC_CMB_FIELDTYPE, 0x403, 7, 0
+0xbcb2, 0xfbb6, 0xb5d6, "\000" 
+    IDC_CMB_FIELDTYPE, 0x403, 7, 0
+0xf5bb, 0xd2b1, 0xb5d6, "\000" 
+    IDC_CMB_FIELDNULL, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_CMB_FIELDNULL, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_CMB_BYTENUM, 0x403, 2, 0
+0x0031, 
+    IDC_CMB_BYTENUM, 0x403, 2, 0
+0x0032, 
+    IDC_CMB_BYTENUM, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_BYTENUM, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_BYTENUM, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMB_BYTENUM, 0x403, 3, 0
+0x3035, "\000" 
+    0
+END
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_SHOCKWAVEFLASH2, 0x376, 230, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0710, 0x0000, 0x2cdb, 0x0000, 0x1b14, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 
+0x0000, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 
+0x006f, 0x0077, 0x0000, 0x000b, 0x0000, 0x000b, 0x0000, 0x0008, 0x000a, 
+0x0000, 0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x000b, 0xffff, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x0008, 0x0010, 0x0000, 0x0053, 0x0068, 0x006f, 0x0077, 0x0041, 
+0x006c, 0x006c, 0x0000, 0x000b, 0x0000, 0x000b, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x000d, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x000b, 0x0001, 0x000b, 0x0000, 0x0008, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0008, 0x0008, 0x0000, 0x0061, 0x006c, 0x006c, 0x0000, 0x0008, 
+0x000a, 0x0000, 0x0074, 0x0072, 0x0075, 0x0065, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_CURSOR         CURSOR                  "res\\hmove.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "FrameWork\n\nFrameW\n\n\nFrameWork.Document\nFrameW Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FrameWork"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDC_TREE                "m_wndTree"
+    IDC_STATIC_PROPCONTROL  "property control "
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\FrameWork.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

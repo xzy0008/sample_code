@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vgVisualPlatformDLL">
+      <UniqueIdentifier>{ee4b19fc-5b8e-4608-bae8-22aea0ad736e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgVisualPlatformDLL\vgUi">
+      <UniqueIdentifier>{92281720-26ee-4f27-856a-9696dbcd4f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{608ffdd4-b0c8-4356-b4be-4b3d2dbbb17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{84a10ba3-73e8-4ba2-9142-de11de86c837}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\bcgprores.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\DynamicItems.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\MainFrm.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgAutoLoadThread.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgClientRenderCommand.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWork.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWorkDoc.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgFrameWorkView.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLogonDialog.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgUserScriptOtherModules.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgUserScriptSystem.h">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgPropBar.h">
+      <Filter>vgVisualPlatformDLL\vgUi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgWorkbar.h">
+      <Filter>vgVisualPlatformDLL\vgUi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgCommonImportLibs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgCommonStdHeaders.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vgCommon\vgStdafx.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src_sdk\vgVisualPlatformDLL\res.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLocalDefines.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgLocalImportLibs.h" />
+    <ClInclude Include="..\..\include\vgVisualPlatformDLL\vgStableHeaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\DynamicItems.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\MainFrm.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgAutoLoadThread.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWork.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWorkDoc.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWorkView.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgLogonDialog.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgUserScriptOtherModules.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgUserScriptSystem.cpp">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vgVisualEffectsDLL\vgPropBar.cpp">
+      <Filter>vgVisualPlatformDLL\vgUi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgWorkbar.cpp">
+      <Filter>vgVisualPlatformDLL\vgUi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src_sdk\vgStableHeaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src_sdk\vgVisualPlatformDLL\vgFrameWork.rc">
+      <Filter>vgVisualPlatformDLL</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\back.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bar_down.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bar_up.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00001.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00002.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00003.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00004.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\bmp00005.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\check.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\checked.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\fore.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\FrameWorkDoc.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\hmove.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00001.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00002.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00003.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00004.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00005.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00006.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00007.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00008.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00009.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00010.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00011.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00012.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00013.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\ico00014.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon1.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon2.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icon3.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\icons.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\logo.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Navi_wreckBlack.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Navi_wreckBlue.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\root.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\s_i.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Splsh16.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\tabIcon.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar1.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar2.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar256.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar256_s.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolbar3.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_camera.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_camera_s.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_s.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sm_include.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sr_mode.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Toolbar_edit_sr_shape.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\toolgis.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\u_i.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\unchecked.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\vgFrameWork.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\vgFrameWorkDoc.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\VRGIS.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\src_sdk\vgVisualPlatformDLL\res\Workspace.bmp">
+      <Filter>res</Filter>
+    </None>
+  </ItemGroup>
+</Project>
